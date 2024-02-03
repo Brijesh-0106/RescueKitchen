@@ -1,0 +1,265 @@
+/* Google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+/* font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* General CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+.greenraleway{
+  color: rgb(1, 156, 1);
+  font-family: 'Raleway', sans-serif; 
+}
+.yellowraleway{
+  color: #e2b500;
+  font-family: 'Raleway', sans-serif; 
+}
+
+/* Navbar start*/
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 12vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.a {
+  position: relative;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(1, 156, 1);
+  font-size: 1.4vw;
+  letter-spacing: 0.5px;
+}
+
+.a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.4s ease-in-out;
+}
+
+.a:hover {
+  color: black;
+}
+
+.a:hover::after {
+  width: 100%;
+}
+
+.donate {
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-size: large;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.btnD {
+  color: black;
+  text-decoration: none;
+}
+.btnD:hover {
+  color: white;
+}
+
+.donate:hover {
+  border: 2px solid rgb(1, 156, 1);
+  outline: none;
+  color: white;
+  background-color: rgb(1, 156, 1);
+}
+
+.logo {
+  color: transparent;
+  font-weight: 900;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
+  margin: auto;
+}
+
+.logo span {
+  color: rgb(1, 156, 1);
+  font-size: larger;
+  font-weight: 900;
+}
+
+.wholelogo {
+  display: flex;
+  gap: 2px;
+}
+
+nav img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.done {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+/* Navbar ends */
+
+/* Hero section starts */
+
+.hero {
+  height: 88vh;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.engage {
+  width: 40%;
+  top: 30%;
+  position: absolute;
+  left: 7%;
+  text-align: center;
+  z-index: 99;
+}
+
+.engage h2 {
+  -webkit-text-stroke: 1.25px green;
+  color: white;
+  font-size: 41px;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+}
+
+.engage h3 {
+  color: white;
+  margin: 20px 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+.engage button {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 15px 35px;
+}
+
+.curs {
+  font-family: cursive;
+}
+
+.curs span {
+  color: rgb(1, 156, 1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  gap: 40px;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: rgb(1, 156, 1);
+}
+
+/* Hero section ends */
+
+/* our motivation section starts */
+
+/* Header section starts */
+.sec_header::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(decoration.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  /* bottom: -105px; */
+  left: 0;
+}
+
+.sec {
+  margin-top: 20px;
+  margin-bottom: 4rem;
+}
+.sec_header h1 {
+  color: rgb(1, 156, 1);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+/* Header section ends */
+
+/* ourmotivation starts */
+.ourmotivation {
+  display: flex;
+  padding: 25px 20px 20px 30px;
+  width: 100%;
+}
+
+.ourworkcontentone h3 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(1, 156, 1);
+}
+
+.bgimg1 {
+  background-image: url(Narendra_modi_holding_a_sign_that_says_Stop_foo.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.ourmotivationone {
+  font-size: 22px;
+  width: 60%;
+}
+.ourmotivationtwo {
+  width: 40%;
+}
+/* our motivation section ends */
+
+/* news section starts */
+.cardimg {
+  background-image: url(https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/15-10-2020_FAO_Uganda.jpg/image1170x530cropped.jpg);
+  background-size: contain;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.newscards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 20px 20px 30px;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* news section ends */
+
+/* solution and causes section starts */
+
+
+/* solution and causes section ends */

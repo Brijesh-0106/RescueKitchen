@@ -11,13 +11,13 @@ font-family: 'Raleway', sans-serif; */
   padding: 0;
 }
 
-.greenraleway{
+.greenraleway {
   color: rgb(1, 156, 1);
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
 }
-.yellowraleway{
+.yellowraleway {
   color: #e2b500;
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
 }
 
 /* Navbar start*/
@@ -259,7 +259,199 @@ video {
 
 /* news section ends */
 
-/* solution and causes section starts */
+/* Login section starts */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1605210055344-330690f6c99d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjEwfHxmcnVpdHN8ZW58MHx8MHx8fDA%3D");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 60vw;
+  margin: 20px auto;
+  background-size: contain;
+  background-position: left;
+}
 
+.main {
+  background-color: transparent;
+  color: rgb(1, 156, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgb(1, 156, 1);
+  width: 420px;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
 
-/* solution and causes section ends */
+.main h2 {
+  text-align: center;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  height: 50px;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background: transparent;
+  border: 2px solid black;
+  font-size: 16px;
+  color: rgb(1, 156, 1);
+  padding: 20px 45px 20px 20px;
+}
+
+.input input::placeholder {
+  color: black;
+}
+
+.input input:focus {
+  border: 2px solid rgb(1, 156, 1);
+}
+
+.input i {
+  color: rgb(1, 156, 1);
+  position: absolute;
+  font-size: 20px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checkbox {
+  display: flex;
+  font-size: 14.5px;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+}
+
+.checkbox label input {
+  accent-color: rgb(1, 156, 1);
+  margin-right: 3px;
+}
+
+.checkbox a {
+  color: rgb(1, 156, 1);
+  text-decoration: none;
+}
+
+.checkbox a:hover {
+  text-decoration: underline;
+}
+
+.btnL {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 40px;
+}
+.btnL:hover {
+  color: white;
+  border: 2px solid rgb(1, 156, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(1, 156, 1);
+}
+
+.link {
+  color: rgb(1, 156, 1);
+  margin: 20px 0 15px;
+  text-align: center;
+}
+
+.link a {
+  color: rgb(1, 156, 1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.captcha {
+  margin: 35px 0;
+}
+
+.preview {
+  color: rgb(1, 156, 1);
+  border: 1px dashed rgb(1, 156, 1);
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  letter-spacing: 8px;
+  margin: 10px 0;
+  line-height: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.preview span {
+  display: inline-block;
+  user-select: none;
+}
+
+.captcha-form {
+  display: flex;
+}
+
+.captcha-form input {
+  width: 100%;
+  border: 1px solid #888;
+  padding: 8px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  border-right: none;
+  font-size: 16px;
+  color: rgb(1, 156, 1);
+}
+
+.captcha-form input:focus{
+  border: 2px solid rgb(1, 156, 1);
+  border-right: none;
+}
+
+.captcha-refresh {
+  border: none;
+  outline: none;
+  width: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+.captcha-refresh:hover {
+  border: 2px solid rgb(1, 156, 1);
+  color: rgb(1, 156, 1);
+}
+
+.twenty {
+  font-size: 20px;
+  color: rgb(1, 156, 1);
+}
+
+.captcha-form input::placeholder {
+  color: black;
+}
+
+.captcha label {
+  color: #e2b500;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Login section ends */

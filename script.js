@@ -58,3 +58,35 @@ document.querySelector(".captcha-refresh").addEventListener("click", function ()
     generateString();
     setcaptcha()
 })
+
+
+// Below both is used to add hover effect on buttons of cards
+function hoverEffect(element) {
+    element.style.color = "white";
+    element.style.backgroundColor = "rgb(1,156,1)";
+    element.style.border = "2px solid rgb(1,156,1)";
+}
+
+
+function normalEffect(element) {
+    element.style.color = "black";
+    element.style.backgroundColor = "transparent";
+    element.style.border = "1px solid black";
+}
+// end
+
+
+// Below code is for automatic corousal
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

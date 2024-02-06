@@ -33,6 +33,10 @@ nav {
   margin: auto;
 }
 
+nav a{
+  text-decoration: none;
+}
+
 .a {
   position: relative;
   text-decoration: none;
@@ -187,11 +191,6 @@ video {
 
 /* Hero section ends */
 
-
-
-
-
-
 /* our motivation section starts */
 
 /* Header section starts */
@@ -214,7 +213,7 @@ video {
 .sec_header h1 {
   color: rgb(1, 156, 1);
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 /* Header section ends */
 
@@ -264,9 +263,6 @@ video {
 
 /* news section ends */
 
-
-
-
 /* Login section starts */
 .login {
   display: flex;
@@ -310,14 +306,14 @@ video {
   border: none;
   border-radius: 40px;
   background: transparent;
-  border: 2px solid black;
+  border: 2px solid rgb(1, 156, 1);
   font-size: 16px;
   color: rgb(1, 156, 1);
   padding: 20px 45px 20px 20px;
 }
 
 .input input::placeholder {
-  color: black;
+  color: #e2b500;
 }
 
 .input input:focus {
@@ -422,7 +418,7 @@ video {
   outline: none;
   border: none;
   background: transparent;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(1, 156, 1);
   border-right: none;
   font-size: 16px;
   color: rgb(1, 156, 1);
@@ -440,7 +436,7 @@ video {
   cursor: pointer;
   background-color: transparent;
   color: rgb(0, 0, 0);
-  border: 2px solid black;
+  border: 2px solid rgb(1, 156, 1);
 }
 
 .captcha-refresh:hover {
@@ -454,7 +450,7 @@ video {
 }
 
 .captcha-form input::placeholder {
-  color: black;
+  color: #e2b500;
 }
 
 .captcha label {
@@ -464,18 +460,15 @@ video {
 
 /* Login section ends */
 
-
-
-
-/* signin section starts */
+/* contact us section starts */
 .con {
   margin: 9vw 0vh;
   display: flex;
   flex-direction: row;
 }
 
-.signin{
-  padding: 40px 0;
+.signin {
+  padding: 25px 0;
 }
 
 .form1 {
@@ -485,7 +478,7 @@ video {
 }
 
 .con h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   color: deeppink;
   font-size: 3.2vw;
@@ -503,7 +496,8 @@ video {
   position: absolute;
   width: 19vw;
   height: 3.7vw;
-  font-family: 'Merriweather', serif;
+  color: rgb(1, 156, 1);
+  font-family: "Merriweather", serif;
   font-weight: 100;
   font-size: 1.3vw;
   border: none;
@@ -516,7 +510,6 @@ video {
 
 .conr input:focus {
   outline: none;
-  /* IMPORTANT */
 }
 
 .name {
@@ -527,7 +520,6 @@ video {
   background-color: white;
 }
 
-
 .phone {
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -535,7 +527,6 @@ video {
   height: 3.7vw;
   background-color: white;
 }
-
 
 .apple {
   margin: 1.14vw 2vw;
@@ -556,8 +547,9 @@ video {
 
 .email input {
   position: absolute;
+  color: rgb(1, 156, 1);
   width: 47vw;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 100;
   height: 3.7vw;
   font-size: 1.3vw;
@@ -572,10 +564,11 @@ video {
   position: absolute;
   width: 47vw;
   margin: 2vh 0vh;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   height: 10.5vw;
   font-size: 1.4vw;
   border: none;
+  color: rgb(1, 156, 1);
 }
 
 .message textarea:focus {
@@ -583,7 +576,7 @@ video {
 }
 
 .message {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -601,7 +594,7 @@ video {
 }
 
 .conr h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   font-size: 2.5vw;
   color: black;
@@ -609,13 +602,13 @@ video {
 }
 
 .info {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   padding: 0px 25px;
 }
 
 .open {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   padding: 0px 30px;
 }
@@ -642,7 +635,7 @@ video {
 }
 
 .btnS {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   display: block;
   border: none;
@@ -658,11 +651,10 @@ video {
 .btnS:hover {
   color: white;
   background: rgb(1, 156, 1);
-
 }
 
 .our input {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 100;
   position: absolute;
   width: 19vw;
@@ -694,7 +686,7 @@ video {
   background-color: deeppink;
   width: 3.3rem;
   border-radius: 2rem;
-  margin: 0px .9vw;
+  margin: 0px 0.9vw;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -704,7 +696,6 @@ video {
   font-size: 1.2rem;
   margin: 1.1rem;
 }
-
 
 .icon:hover {
   transform: scale(1.1);
@@ -789,4 +780,147 @@ video {
 .deeppink {
   color: black;
 }
-/* signin section ends */
+/* contact us section ends */
+
+
+
+
+
+
+
+
+/* donors section starts */
+.donors {
+  padding: 30px 100px;
+}
+
+.donorsimages {
+  margin: 50px auto;
+}
+
+.donationinfo {
+  width: 55vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.donationinfo h2 {
+  color: #e2b500;
+}
+.donationinfo h3 {
+  color: rgb(1, 156, 1);
+}
+
+.donationbutton button {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 15px 35px;
+}
+
+.donationbutton button:hover {
+  color: white;
+  background-color: rgb(1, 156, 1);
+  border: 2px solid rgb(1, 156, 1);
+}
+
+.card1 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/general_mills_logo.png?_cchid=1b8a05dc474acaced150a69a26d41629");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card2 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/posner-horizontal-teal.png?_cchid=7314112977f26a1f3adf556f28cdc098");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card3 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/bjfff.png?_cchid=98c29afe2e4aae8b2b9c3a14ccb4ff79");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card4 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/crown-logo.png?_cchid=2cf64047a3206ca08d832c643901b894");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card5 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card6 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/logos/financial-funders/…_logo.png?_cchid=f50c3e824fceff484cc49b70f7158c0a");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card7 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+.card8 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/the-tepper-foundation.png?_cchid=47891c05f9ac04820811284b7a9ac95e");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 9rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* donors section ends */
+
+/* sign in section ends */
+
+/* sign in section ends */

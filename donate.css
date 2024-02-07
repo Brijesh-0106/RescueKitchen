@@ -142,6 +142,7 @@ nav img {
 .sec_header h1 {
   color: rgb(1, 156, 1);
   text-align: center;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
 }
 
@@ -149,14 +150,16 @@ nav img {
 
 /* Hero section starts */
 .hero {
-  height: 80vh;
+  /* height: 80vh; */
+  padding: 50px 0px;
 }
 
 video {
-  width: 48%;
-  max-width: 48%;
+  width: 44%;
+  max-width: 44%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .rowvideo {
@@ -166,10 +169,17 @@ video {
 }
 
 .videocontent {
-  width: 48%;
+  font-family: "Raleway";
+  width: 52%;
 }
 
-.videocontent h4 {
+.videocontent h1 {
+  font-family: "Raleway";
+  color: rgb(1, 156, 1);
+}
+
+.videocontent h3 {
+  font-family: "Raleway";
   color: #e2b500;
 }
 
@@ -180,6 +190,7 @@ video {
 .curs {
   font-family: cursive;
   color: black;
+  font-size: 28px;
 }
 
 .curs span {
@@ -187,23 +198,588 @@ video {
 }
 /* Hero section ends */
 
-
-
-
 /* Donation table and info starts */
 .tableinfo {
-  padding: 10px 45px;
+  padding: 60px 45px;
   display: flex;
   justify-content: space-between;
 }
 
 .tabledonation {
-  width: 48%;
+  width: 52%;
+  font-family: "Raleway";
 }
 
 .info {
-  width: 48%;
+  width: 44%;
+  font-family: "Raleway";
 }
 
+.info h3 {
+  font-family: "Raleway";
+  color: #e2b500;
+}
+
+.info h1 {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway";
+}
+
+.info p {
+  font-size: 21px;
+  font-family: "Raleway";
+}
 
 /* Donation table and info ends */
+
+/* donation form section starts */
+.con {
+  margin: 9vw 0vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.signin {
+  padding: 25px 0;
+}
+
+.form1 {
+  background-color: #fff;
+  width: 70vw;
+  margin: 20px auto;
+}
+
+.con h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  color: deeppink;
+  font-size: 3.2vw;
+  text-align: center;
+  margin: 2.5vw 0vh;
+}
+
+.inrow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.inrow input {
+  position: absolute;
+  width: 19vw;
+  height: 3.7vw;
+  color: rgb(1, 156, 1);
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.inrow input:focus {
+  outline: none;
+  /* IMPORTANT */
+}
+
+.conr input:focus {
+  outline: none;
+}
+
+.name {
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  width: 25vw;
+  height: 3.7vw;
+  background-color: white;
+}
+
+.phone {
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 25vw;
+  height: 3.7vw;
+  background-color: white;
+}
+
+.apple {
+  margin: 1.14vw 2vw;
+  font-size: 1.4rem;
+  color: rgb(1, 156, 1);
+}
+
+.email {
+  position: relative;
+  margin-right: 0px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 3.7vw;
+  width: 56.35vw;
+  margin: 2vw 6.95vw;
+  background-color: white;
+}
+
+.email input {
+  position: absolute;
+  color: rgb(1, 156, 1);
+  width: 47vw;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  height: 3.7vw;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.email input:focus {
+  outline: none;
+}
+
+.message textarea {
+  position: absolute;
+  width: 47vw;
+  margin: 2vh 0vh;
+  font-family: "Merriweather", serif;
+  height: 10.5vw;
+  font-size: 1.4vw;
+  border: none;
+  color: rgb(1, 156, 1);
+}
+
+.message textarea:focus {
+  outline: none;
+}
+
+.message {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 56.35vw;
+  margin: 2vw 6.95vw;
+  height: 13vw;
+  background-color: white;
+}
+
+.conr {
+  width: 30vw;
+  z-index: 2;
+  border: none;
+  background-color: #fff;
+}
+
+.conr h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  font-size: 2.5vw;
+  color: black;
+  margin: 2.5vw 0vh;
+}
+
+.info {
+  font-family: "Raleway ";
+  font-weight: 100;
+  padding: 0px 25px;
+}
+
+.open {
+  font-family: "Raleway";
+  font-weight: 100;
+  padding: 0px 30px;
+}
+
+.info li {
+  margin: 23px 0vw;
+  font-size: 1.5vw;
+}
+
+.open li {
+  margin: 1.5vw 0vw;
+  font-size: 1.5vw;
+}
+
+.form1 ::placeholder {
+  font-weight: 400;
+  font-family: system-ui;
+  color: #e2b500;
+}
+
+.blue {
+  color: darkslategray;
+  font-weight: 500;
+}
+
+.btnS {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  display: block;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 2.7vw;
+  color: #e2b500;
+  font-size: 1.6vw;
+  background: white;
+  width: 10vw;
+  margin: 0vw auto;
+}
+
+.btnS:hover {
+  color: white;
+  background: rgb(1, 156, 1);
+}
+
+.our input {
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  position: absolute;
+  width: 19vw;
+  height: 3.7vw;
+  color: dimgray;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.open ul li {
+  list-style: none;
+  color: dimgray;
+}
+
+.margerita {
+  margin: 1.6vw 0px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 3.3rem;
+  background-color: deeppink;
+  width: 3.3rem;
+  border-radius: 2rem;
+  margin: 0px 0.9vw;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.ico {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 1.1rem;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transform: translateY(-10px);
+}
+
+.app {
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app ::placeholder {
+  font-weight: 400;
+  font-family: system-ui;
+  color: deeppink;
+}
+
+.fn {
+  position: relative;
+  margin-right: 0px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 7vh;
+  width: 56.35vw;
+  margin: 3.4vh 13vh;
+  background-color: white;
+}
+
+.elasticman {
+  position: relative;
+  margin-right: 0px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 3.7vw;
+  width: 54vw;
+  margin: 2vw 4vw;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.elasticman input {
+  position: absolute;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+  width: 47vw;
+  height: 3.7vw;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.elasticman input:focus {
+  outline: none;
+}
+
+.spiderman textarea {
+  position: absolute;
+  width: 47vw;
+  margin: 1.5vh 0vh;
+  font-family: "Merriweather", serif;
+  height: 10.5vw;
+  font-size: 1.4vw;
+  border: none;
+}
+
+.spiderman textarea:focus {
+  outline: none;
+}
+
+.spiderman {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 54vw;
+  margin: 2vw 4vw;
+  height: 13vw;
+  background-color: white;
+}
+
+.deeppink {
+  color: black;
+}
+
+/* dropdown starts */
+.dropdown {
+  min-width: 25vw;
+  position: relative;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background: white;
+  color: rgb(1, 156, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  width: 25vw;
+  margin: 0px auto;
+  padding: 0.7em 1em;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+  font-size: 1.3vw;
+  padding: 0.55em 1em;
+}
+
+.select-clicked {
+  border: 2px solid rgb(1, 156, 1);
+}
+
+.select:hover {
+  background: white;
+}
+
+.caret {
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid rgb(1, 156, 1);
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: white;
+  border: 1px solid rgb(1, 156, 1);
+  top: 4em;
+  left: 50%;
+  width: 25vw;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  position: absolute;
+  color: rgb(1, 156, 1);
+  border-radius: 0.5em;
+}
+
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #2a2d35;
+}
+
+.active {
+  background: rgb(1, 156, 1);
+  color: white;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+/* donation form section ends */
+
+/* Supporters starts */
+.supporterinfo {
+  width: 55vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.supporterinfo p {
+  font-size: 20px;
+}
+
+.supporterinfo h1 {
+  color: rgb(1, 156, 1);
+}
+
+.supporters {
+  padding: 60px 70px;
+}
+
+.card1 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/general_mills_logo.png?_cchid=1b8a05dc474acaced150a69a26d41629");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card2 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/posner-horizontal-teal.png?_cchid=7314112977f26a1f3adf556f28cdc098");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card3 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/bjfff.png?_cchid=98c29afe2e4aae8b2b9c3a14ccb4ff79");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card4 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/crown-logo.png?_cchid=2cf64047a3206ca08d832c643901b894");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card5 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card6 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/logos/financial-funders/…_logo.png?_cchid=f50c3e824fceff484cc49b70f7158c0a");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card7 {
+  width: 14rem;
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card8 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/the-tepper-foundation.png?_cchid=47891c05f9ac04820811284b7a9ac95e");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card9 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/google-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card10 {
+  width: 14rem;
+  background-image: url("	https://refed.org/uploads/twc-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card11 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/unilever.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+.card12 {
+  width: 14rem;
+  background-image: url("https://refed.org/uploads/our-funders-best-foods-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 4rem;
+}
+
+.supporterimage {
+  margin: 45px 0;
+}
+/* Supporters ends */
+
+
+
+
+/* Indivisual donors starts */
+.names{
+  margin: 45px 0;
+}
+/* Indivisual donors ends */

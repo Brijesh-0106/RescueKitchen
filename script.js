@@ -74,19 +74,3 @@ function normalEffect(element) {
     element.style.border = "1px solid black";
 }
 // end
-
-
-// Below code is for automatic corousal
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    grabCursor: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});

@@ -33,7 +33,7 @@ nav {
   margin: auto;
 }
 
-nav a{
+nav a {
   text-decoration: none;
 }
 
@@ -213,6 +213,7 @@ video {
 .sec_header h1 {
   color: rgb(1, 156, 1);
   text-align: center;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
 }
 /* Header section ends */
@@ -246,20 +247,6 @@ video {
 /* our motivation section ends */
 
 /* news section starts */
-.cardimg {
-  background-image: url(https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/15-10-2020_FAO_Uganda.jpg/image1170x530cropped.jpg);
-  background-size: contain;
-  background-position: cover;
-  background-repeat: no-repeat;
-}
-
-.newscards {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 25px 20px 20px 30px;
-  gap: 30px;
-  justify-content: center;
-}
 
 /* news section ends */
 
@@ -781,13 +768,6 @@ video {
   color: black;
 }
 /* contact us section ends */
-
-
-
-
-
-
-
 
 /* donors section starts */
 .donors {

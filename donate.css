@@ -629,7 +629,8 @@ video {
 }
 
 .menu li:hover {
-  background: #2a2d35;
+  background: #e2b500;
+  color: white;
 }
 
 .active {

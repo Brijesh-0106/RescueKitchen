@@ -15,6 +15,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Swiper CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS(Animation On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -52,9 +54,12 @@
         </video>
         <!-- Content inside video -->
         <div class="engage">
-            <h2><span class="curs"><span>R</span>escue<span>K</span>itchen</span> provides best solution to fight food
+            <h2><span class="curs"><span>R</span>escue<span>K</span>itchen</span> provides best solution to
+                fight food
                 waste.</h2>
-            <h3>"Throwing away food is like stealing from the table of those who are poor and hungry"</h3>
+            <h3 data-aos="zoom-in">"Throwing away food is like stealing from the table of those who are
+                poor and hungry"
+            </h3>
             <div class="buttons">
                 <a href="foodwaste.html"><button>Food Waste</button></a>
                 <a href="Donate.html"><button>Donate</button></a>
@@ -117,16 +122,18 @@
 
     <!-- Donors starts -->
     <section>
-        <div class="sec">
+        <div class="sec" data-aos="zoom-in">
             <div class="sec_header">
                 <h1>Donors</h1>
             </div>
         </div>
         <div class="donors">
             <div class="donationinfo">
-                <h1>Dontate to <span class="curs"><span>R</span>escue<span>K</span>itchen</span></h1>
+                <h1>Dontate to <span class="curs"><span>R</span>escue<span>K</span>itchen</span></h1
+                   >
                 <h2>Help Us Create A Sustainable, Inclusive, And Resilient Food System</h2>
-                <p>Reducing food waste is a core solution to fight climate change, increase food security, and make
+                <p>Reducing food waste is a core solution to fight climate change, increase food
+                    security, and make
                     the
                     best use of the money being spent to grow, harvest, process, transport, store, and consume food.
                     Your support of <span class="curs"><span>R</span>escue<span>K</span>itchen</span> helps us guide
@@ -168,7 +175,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="donationbutton">
+            <div class="donationbutton" data-aos="zoom-in">
                 <a href="Donate.html"><button>Donate</button></a>
             </div>
         </div>
@@ -182,7 +189,7 @@
 
     <!-- News section starts -->
     <section>
-        <div class="sec">
+        <div class="sec" data-aos="zoom-in">
             <div class="sec_header">
                 <h1>News & Events</h1>
             </div>
@@ -333,45 +340,6 @@
 
 
 
-
-
-    <!-- Login section starts -->
-    <!-- <section>
-        <div class="sec">
-            <div class="sec_header">
-                <h1>Login</h1>
-            </div>
-        </div>
-        <div class="login">
-            <div class="main">
-                <form action="">
-                    <div class="input">
-                        <input type="text" placeholder="Email">
-                        <i class='bx bxs-lock-alt'></i>
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="Password">
-                        <i class='bx bxs-user'></i>
-                    </div>
-                    <div class="captcha">
-                        <label for="captcha-input">Enter captcha</label>
-                        <div class="preview"></div>
-                        <div class="captcha-form">
-                            <input type="text" id="captcha-input" placeholder="Enter captcha text">
-                            <button class="captcha-refresh"><i class='bx bx-refresh twenty'></i></button>
-                        </div>
-                    </div>
-                    <button type="submit" class="btnL">Login</button>
-                    <div class="link">
-                        <p class="yellowraleway">Don't have account?<a href="#">Sign In</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section> -->
-    <!-- login section ends -->
-
-
     <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -389,16 +357,22 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
+        </script>
     <!-- My js link -->
     <script src="script.js"></script>
     <!-- Bootstarp link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-        crossorigin="anonymous"></script>
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
     <!-- Icons -->
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- 1> FOR AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </body>
 

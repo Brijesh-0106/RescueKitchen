@@ -15,6 +15,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Swiper CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS(Animation On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- textify -->
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
+    <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <style>
         .tabledonation .col,
         .col-sm-1 {
@@ -52,7 +58,7 @@
         <div class="hero">
             <div class="rowvideo">
                 <div class="videocontent">
-                    <h1>Support our mission</h1>
+                    <h1 data-textify data-aos="zoom-in">Support our mission</h1>
                     <h3>Join the fight against food waste and hunger with <span
                             class="curs"><span>R</span>escue<span>K</span>itchen</span></h3>
                     <p>Donation benefits reduction of food waste is the act of giving financial support to
@@ -89,13 +95,13 @@
                 <div class="container text-center">
                     <div class="row row-cols-4">
                         <div class="col-sm-1" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">#</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>#</div>
                         <div class="col" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Donation amount</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>Donation amount</div>
                         <div class="col" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Food waste</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>Food waste</div>
                         <div class="col" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Hunger Relief</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>Hunger Relief</div>
                     </div>
                     <div class="row row-cols-4">
                         <div class="col-sm-1">1</div>
@@ -128,66 +134,10 @@
                         <div class="col">Provides 100,000 meals to people in need2</div>
                     </div>
                 </div>
-                <!-- <table class="table table-bordered table-hover" style="text-align: center;">
-                    <thead class="table-light" style="font-size: larger;">
-                        <tr>
-                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79); font-size: 20px;">#
-                            </th>
-                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79);">Donation amount
-                            </th>
-                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79);">Food waste
-                                reduction
-                            </th>
-                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79);">Hunger Relief</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>$1</td>
-                            <td>Prevents 15 tonnes of CO2 emissions</td>
-                            <td>Provides 10 meals to people in need
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>$10</td>
-                            <td>Prevents 15 kg of CO2 emissions1
-                            </td>
-                            <td>Provides 100 meals to people in need
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>$100</td>
-                            <td>Prevents 150 kg of CO2 emissions1
-                            </td>
-                            <td>Provides 1,000 meals to people in need
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>$1000</td>
-                            <td>Prevents 1.5 tonnes of CO2 emissions1
-                            </td>
-                            <td>Provides 10,000 meals to people in need
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>$10,000</td>
-                            <td>Prevents 15 tonnes of CO2 emissions1
-                            </td>
-                            <td>Provides 100,000 meals to people in need2
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table> -->
             </div>
             <div class="info">
-                <h1>Our Relief work</h1>
-                <h3>Support Food Waste Solution Providers</h3>
+                <h1 data-aos="zoom-in" data-textify>Our Relief work</h1>
+                <h3 data-textify data-textify>Support Food Waste Solution Providers</h3>
                 <p>The table shows how much money you can donate to reduce food waste and its negative
                     impacts, such as greenhouse gas emissions.</p>
                 <p> It
@@ -204,9 +154,9 @@
 
     <!-- donation form starts -->
     <section>
-        <div class="sec">
+        <div class="sec" data-aos="zoom-in">
             <div class="sec_header">
-                <h1>Donation form</h1>
+                <h1 data-textify>Donation form</h1>
             </div>
         </div>
         <div class="signin">
@@ -266,7 +216,7 @@
     <section>
         <div class="supporters">
             <div class="supporterinfo">
-                <h1>Thank You to Our Supporters</h1>
+                <h1 data-textify data-aos="zoom-in">Thank You to Our Supporters</h1>
                 <p><span class="curs"><span>R</span>escue<span>K</span>itchen</span>’s ambitious work is made possible
                     by
                     the generous support of our growing donor community. Alongside our legacy funders, they enable us to
@@ -302,7 +252,7 @@
     <section>
         <div class="supporters">
             <div class="supporterinfo">
-                <h1>Our indivisual donors</h1>
+                <h1 data-textify data-aos="zoom-in">Our indivisual donors</h1>
                 <p>We are extremely grateful for the partnership and support of our growing community of donors.
                 </p>
                 <p> Reimagining a food system without waste or loss requires contributions of all types and sizes.</p>
@@ -351,7 +301,7 @@
         <div class="footercontainer">
             <div class="footerrow">
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h4 data-textify>Services</h4>
                     <ul style="padding-left: 0rem;">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
@@ -431,7 +381,10 @@
                     option.classList.add('active')
                 })
             })
-        })</script>
+        })
+        // textify
+        new Textify({}, gsap);
+    </script>
 
     <!-- Bootstarp link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -440,6 +393,12 @@
     <!-- Icons -->
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- 1> FOR AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 
 </html>

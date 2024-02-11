@@ -25,7 +25,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 55px;
-  justify-content: space-around;
+  padding: 0 25px;
+  justify-content: space-between;
   margin: auto;
 }
 

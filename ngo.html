@@ -10,6 +10,12 @@
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- AOS(Animation On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- textify -->
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
+    <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
 
     <!-- restaurants starts -->
     <section>
-        <h1>All listed NGOs</h1>
+        <h1 data-aos="zoom-in" data-textify>All listed NGOs</h1>
         <br>
         <div class="ngocards">
             <div class="ngocard">
@@ -44,9 +50,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>Save the Children</span> urges: Donate your leftover food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="Save the Children">Contact Save the Children</button>
+                            data-bs-whatever="Save the Children" data-aos="zoom-in">Contact Save the Children</button>
                     </div>
                 </div>
             </div>
@@ -56,9 +62,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>International Rescue Committee’s</span> appeal: Donate surplus food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="International Rescue Committee">Contact IRC</button>
+                            data-bs-whatever="International Rescue Committee" data-aos="zoom-in">Contact IRC</button>
                     </div>
                 </div>
             </div>
@@ -68,9 +74,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>Care International’s</span> request: Please donate unused food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="Care International">Contact Care International</button>
+                            data-bs-whatever="Care International" data-aos="zoom-in">Contact Care International</button>
                     </div>
                 </div>
             </div>
@@ -80,9 +86,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>DirectRelief's</span> call to action: Donate your surplus food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="DirectRelief">Contact DirectRelief</button>
+                            data-bs-whatever="DirectRelief" data-aos="zoom-in">Contact DirectRelief</button>
                     </div>
                 </div>
             </div>
@@ -92,9 +98,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>Save the Children</span> urges: Donate your leftover food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="Save the Children">Contact Save the Children</button>
+                            data-bs-whatever="Save the Children" data-aos="zoom-in">Contact Save the Children</button>
                     </div>
                 </div>
             </div>
@@ -104,9 +110,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>International Rescue Committee’s</span> appeal: Donate surplus food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="International Rescue Committee">Contact IRC</button>
+                            data-bs-whatever="International Rescue Committee" data-aos="zoom-in">Contact IRC</button>
                     </div>
                 </div>
             </div>
@@ -116,9 +122,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>Care International’s</span> request: Please donate unused food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="Care International">Contact Care International</button>
+                            data-bs-whatever="Care International" data-aos="zoom-in">Contact Care International</button>
                     </div>
                 </div>
             </div>
@@ -128,9 +134,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>DirectRelief's</span> call to action: Donate your surplus food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="DirectRelief">Contact DirectRelief</button>
+                            data-bs-whatever="DirectRelief" data-aos="zoom-in">Contact DirectRelief</button>
                     </div>
                 </div>
             </div>
@@ -140,9 +146,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>Save the Children</span> urges: Donate your leftover food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="Save the Children">Contact Save the Children</button>
+                            data-bs-whatever="Save the Children" data-aos="zoom-in">Contact Save the Children</button>
                     </div>
                 </div>
             </div>
@@ -152,9 +158,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>International Rescue Committee’s</span> appeal: Donate surplus food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="International Rescue Committee">Contact IRC</button>
+                            data-bs-whatever="International Rescue Committee" data-aos="zoom-in">Contact IRC</button>
                     </div>
                 </div>
             </div>
@@ -164,9 +170,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>Care International’s</span> request: Please donate unused food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="Care International">Contact Care International</button>
+                            data-bs-whatever="Care International" data-aos="zoom-in">Contact Care International</button>
                     </div>
                 </div>
             </div>
@@ -176,9 +182,9 @@
                 <div class="ngocontent">
                     <div class="ngodetail">
                         <p><span>DirectRelief's</span> call to action: Donate your surplus food.</p>
-                        <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                        <button data-textify type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
                             onmouseout="normalEffect(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-whatever="DirectRelief">Contact DirectRelief</button>
+                            data-bs-whatever="DirectRelief" data-aos="zoom-in">Contact DirectRelief</button>
                     </div>
                 </div>
             </div>
@@ -203,11 +209,10 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" data-bs-dismiss="modal"
-                                class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
-                                onmouseout="normalEffect(this)">Close</button>
-                            <button type="button" class="btn btn-outline-dark"
-                                onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">Send message</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark"
+                                onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">Close</button>
+                            <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                                onmouseout="normalEffect(this)">Send message</button>
                         </div>
                     </div>
                 </div>
@@ -318,6 +323,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
+    <!-- 1> FOR AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS
+        AOS.init();
+        // textify
+        new Textify({}, gsap);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 
 </html>

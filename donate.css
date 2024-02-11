@@ -29,7 +29,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 55px;
-  justify-content: space-around;
+  padding: 0 25px;
+  justify-content: space-between;
   margin: auto;
 }
 
@@ -776,11 +777,8 @@ video {
 }
 /* Supporters ends */
 
-
-
-
 /* Indivisual donors starts */
-.names{
+.names {
   margin: 45px 0;
 }
 /* Indivisual donors ends */
@@ -883,20 +881,20 @@ ul {
 }
 /* footer section ends */
 /* copyright starts */
-.high{
+.high {
   font-size: larger;
   color: black;
 }
 
-.high span{
+.high span {
   color: rgb(1, 156, 1);
 }
 
-.copyright{
+.copyright {
   text-align: center;
   background-color: white;
   color: black;
   padding: 10px 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 /* copyright ends */

@@ -15,6 +15,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Swiper CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .tabledonation .col,
+        .col-sm-1 {
+            color: rgb(1, 156, 1);
+            border: 2px solid #e2b500;
+            background-color: white;
+            padding: 7px 12px;
+            margin: 9px;
+        }
+    </style>
 </head>
 
 <body>
@@ -76,13 +86,59 @@
     <section>
         <div class="tableinfo">
             <div class="tabledonation">
-                <table class="table table-bordered table-hover" style="text-align: center;">
+                <div class="container text-center">
+                    <div class="row row-cols-4">
+                        <div class="col-sm-1" style="color: white;
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">#</div>
+                        <div class="col" style="color: white;
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Donation amount</div>
+                        <div class="col" style="color: white;
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Food waste</div>
+                        <div class="col" style="color: white;
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Hunger Relief</div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col-sm-1">1</div>
+                        <div class="col">$1</div>
+                        <div class="col">Prevents 15 tonnes of CO2 emissions</div>
+                        <div class="col">Provides 10 meals to people in need</div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col-sm-1">2</div>
+                        <div class="col">$10</div>
+                        <div class="col">Prevents 15 kg of CO2 emissions1</div>
+                        <div class="col">Provides 100 meals to people in need</div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col-sm-1">3</div>
+                        <div class="col">$100</div>
+                        <div class="col">Prevents 150 kg of CO2 emissions1</div>
+                        <div class="col">Provides 1,000 meals to people in need</div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col-sm-1">4</div>
+                        <div class="col">$1000</div>
+                        <div class="col">Prevents 1.5 tonnes of CO2 emissions1</div>
+                        <div class="col">Provides 10,000 meals to people in need</div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col-sm-1">5</div>
+                        <div class="col">$10,000</div>
+                        <div class="col">Prevents 15 tonnes of CO2 emissions1</div>
+                        <div class="col">Provides 100,000 meals to people in need2</div>
+                    </div>
+                </div>
+                <!-- <table class="table table-bordered table-hover" style="text-align: center;">
                     <thead class="table-light" style="font-size: larger;">
                         <tr>
-                            <th scope="col" style="color: rgb(1,156,1); font-size: 20px;">#</th>
-                            <th scope="col" style="color: rgb(1,156,1);">Donation amount</th>
-                            <th scope="col" style="color: rgb(1,156,1);">Food waste reduction</th>
-                            <th scope="col" style="color: rgb(1,156,1);">Hunger Relief</th>
+                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79); font-size: 20px;">#
+                            </th>
+                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79);">Donation amount
+                            </th>
+                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79);">Food waste
+                                reduction
+                            </th>
+                            <th scope="col" style="color: white;background-color: rgb(79, 159, 79);">Hunger Relief</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -127,7 +183,7 @@
                         </tr>
                     </tbody>
 
-                </table>
+                </table> -->
             </div>
             <div class="info">
                 <h1>Our Relief work</h1>
@@ -291,7 +347,60 @@
 
 
 
-
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footerrow">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul style="padding-left: 0rem;">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">NGOs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Food Waste</h4>
+                    <ul style="padding-left: 0rem;">
+                        <li><a href="#">What is food waste?</a></li>
+                        <li><a href="#">Food waste reasons</a></li>
+                        <li><a href="#">Food waste effects</a></li>
+                        <li><a href="#">food waste solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Donation</h4>
+                    <ul style="padding-left: 0rem;">
+                        <li><a href="#">Importance of donation</a></li>
+                        <li><a href="#">Donation form</a></li>
+                        <li><a href="#">All brand donors</a></li>
+                        <li><a href="#">Indivisual donors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <small>
+            <span>
+                <span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. 4602 21st Street, #1531,
+                Long Island City, NY 11101-9998</span>
+            <br>
+            <span><span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. is a tax-exempt
+                organization
+                under section 501(c)(3) of the Internal Revenue Code. Tax ID: 83-1579781
+            </span>
+        </small>
+    </div>
 
     <script>
         // for dropdown

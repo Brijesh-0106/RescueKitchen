@@ -121,12 +121,6 @@ nav img {
 /* Navbar ends */
 
 /* contact us section starts */
-.con {
-  margin: 9vw 0vh;
-  display: flex;
-  flex-direction: row;
-}
-
 .signin {
   padding: 25px 0;
 }
@@ -135,15 +129,6 @@ nav img {
   background-color: #fff;
   width: 70vw;
   margin: 20px auto;
-}
-
-.con h1 {
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
-  color: deeppink;
-  font-size: 3.2vw;
-  text-align: center;
-  margin: 2.5vw 0vh;
 }
 
 .inrow {
@@ -155,7 +140,7 @@ nav img {
 .inrow input {
   position: absolute;
   width: 19vw;
-  height: 3.7vw;
+  height: 3.5vw;
   color: rgb(1, 156, 1);
   font-family: "Merriweather", serif;
   font-weight: 100;
@@ -166,10 +151,6 @@ nav img {
 .inrow input:focus {
   outline: none;
   /* IMPORTANT */
-}
-
-.conr input:focus {
-  outline: none;
 }
 
 .name {
@@ -211,7 +192,7 @@ nav img {
   width: 47vw;
   font-family: "Merriweather", serif;
   font-weight: 100;
-  height: 3.7vw;
+  height: 3.5vw;
   font-size: 1.3vw;
   border: none;
 }
@@ -246,43 +227,6 @@ nav img {
   background-color: white;
 }
 
-.conr {
-  width: 30vw;
-  z-index: 2;
-  border: none;
-  background-color: #fff;
-}
-
-.conr h1 {
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
-  font-size: 2.5vw;
-  color: black;
-  margin: 2.5vw 0vh;
-}
-
-.info {
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
-  padding: 0px 25px;
-}
-
-.open {
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
-  padding: 0px 30px;
-}
-
-.info li {
-  margin: 23px 0vw;
-  font-size: 1.5vw;
-}
-
-.open li {
-  margin: 1.5vw 0vw;
-  font-size: 1.5vw;
-}
-
 .form1 ::placeholder {
   font-weight: 400;
   font-family: system-ui;
@@ -313,66 +257,12 @@ nav img {
   background: rgb(1, 156, 1);
 }
 
-.our input {
-  font-family: "Merriweather", serif;
-  font-weight: 100;
-  position: absolute;
-  width: 19vw;
-  height: 3.7vw;
-  color: dimgray;
-  font-size: 1.3vw;
-  border: none;
-}
-
-.open ul li {
-  list-style: none;
-  color: dimgray;
-}
-
-.margerita {
-  margin: 1.6vw 0px;
-}
-
 .social {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.icon {
-  height: 3.3rem;
-  background-color: deeppink;
-  width: 3.3rem;
-  border-radius: 2rem;
-  margin: 0px 0.9vw;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-
-.ico {
-  color: #fff;
-  font-size: 1.2rem;
-  margin: 1.1rem;
-}
-
-.icon:hover {
-  transform: scale(1.1);
-  transform: translateY(-10px);
-}
-
-.app {
-  width: 62vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.app ::placeholder {
-  font-weight: 400;
-  font-family: system-ui;
-  color: deeppink;
 }
 
 .fn {
@@ -383,57 +273,6 @@ nav img {
   height: 7vh;
   width: 56.35vw;
   margin: 3.4vh 13vh;
-  background-color: white;
-}
-
-.elasticman {
-  position: relative;
-  margin-right: 0px;
-  border: none;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  height: 3.7vw;
-  width: 54vw;
-  margin: 2vw 4vw;
-  background-color: white;
-  margin-bottom: 0;
-}
-
-.elasticman input {
-  position: absolute;
-  font-family: "Merriweather", serif;
-  font-weight: 100;
-  width: 47vw;
-  height: 3.7vw;
-  font-size: 1.3vw;
-  border: none;
-}
-
-.elasticman input:focus {
-  outline: none;
-}
-
-.spiderman textarea {
-  position: absolute;
-  width: 47vw;
-  margin: 1.5vh 0vh;
-  font-family: "Merriweather", serif;
-  height: 10.5vw;
-  font-size: 1.4vw;
-  border: none;
-}
-
-.spiderman textarea:focus {
-  outline: none;
-}
-
-.spiderman {
-  font-family: "Courier New", Courier, monospace;
-  position: relative;
-  border: none;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  width: 54vw;
-  margin: 2vw 4vw;
-  height: 13vw;
   background-color: white;
 }
 
@@ -570,7 +409,7 @@ ul {
   color: black;
 }
 
-.high span{
+.high span {
   color: rgb(1, 156, 1);
 }
 
@@ -591,3 +430,139 @@ ul {
 }
 
 /* copyright ends */
+
+/* media queries */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .form1 {
+    width: 100vw;
+    margin: 0px auto;
+  }
+
+  .apple {
+    margin: 2.22vw 2vw;
+  }
+
+  .btnS {
+    height: 4.7vw;
+    font-size: 2.3vw;
+    width: 16vw;
+  }
+
+  .email {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 1vw auto;
+  }
+
+  .email input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 2.3vw;
+  }
+
+  .message {
+    height: 17vw;
+    width: 70vw;
+    margin: 2vw auto;
+  }
+
+  .message textarea {
+    width: 57vw;
+    height: 14vw;
+    font-size: 2.4vw;
+  }
+
+  .inrow {
+    flex-direction: column;
+  }
+
+  .name {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 0vw auto;
+    margin-bottom: 1vw;
+  }
+
+  .phone {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 1vw auto;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 2.3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form1 {
+    width: 100vw;
+    margin: 0px auto;
+  }
+
+  .apple {
+    font-size: 3.4vw;
+    margin: 2.22vw 2vw;
+  }
+  .btnS {
+    height: 6.7vw;
+    font-size: 3.5vw;
+    width: 21vw;
+  }
+
+  .email {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+  }
+
+  .email input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 3vw;
+  }
+
+  .message {
+    height: 23vw;
+    width: 85%;
+    margin: 2vw auto;
+  }
+
+  .message textarea {
+    width: 61vw;
+    margin: 1vw;
+    height: 17vw;
+    font-size: 3.1vw;
+  }
+
+  .inrow {
+    flex-direction: column;
+  }
+
+  .name {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 0vw auto;
+    margin-bottom: 1vw;
+  }
+
+  .phone {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 7.7vw;
+    font-size: 3vw;
+  }
+}

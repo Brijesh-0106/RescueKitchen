@@ -188,14 +188,14 @@
                             <li>Bangladeshi Taka</li>
                         </ul>
                     </div>
-                    <div class="phone">
+                    <div class="phone" id="phon">
                         <label for="pho">
                             <ion-icon name="wallet-outline" class="apple"></ion-icon>
                         </label>
                         <input type="number" id="pho" placeholder="Amount">
                     </div>
                 </div>
-                <div class="message">
+                <div class="message" id="massage">
                     <label for="mes">
                         <ion-icon name="chatbox-ellipses-outline" class="apple"></ion-icon>
                     </label>
@@ -355,22 +355,28 @@
     <script>
         // for dropdown
         const dropdowns = document.querySelectorAll('.dropdown')
+        const mm = document.getElementById('massage')
+        const phon = document.getElementById('phon')
         dropdowns.forEach(dropdown => {
             const select = dropdown.querySelector('.select')
             const menu = dropdown.querySelector('.menu')
             const caret = dropdown.querySelector('.caret')
             const options = dropdown.querySelectorAll('.menu li')
-            console.log(options)
+            console.log(mm)
             const selected = dropdown.querySelector('.selected')
             select.addEventListener("click", () => {
                 select.classList.toggle('select-clicked')
+                mm.classList.toggle('pa6ad')
+                phon.classList.toggle('pa6ad')
                 caret.classList.toggle('caret-rotate')
                 menu.classList.toggle('menu-open')
             })
-
+            
             options.forEach(option => {
                 option.addEventListener('click', () => {
                     selected.innerHTML = option.innerHTML
+                    mm.classList.toggle('pa6ad')
+                    phon.classList.toggle('pa6ad')
                     selected.innerText = option.innerText
                     select.classList.remove('select-clicked')
                     caret.classList.remove('caret-rotate')

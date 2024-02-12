@@ -643,6 +643,10 @@ video {
   display: block;
   opacity: 1;
 }
+
+.pa6ad {
+  z-index: -99;
+}
 /* donation form section ends */
 
 /* Supporters starts */
@@ -898,3 +902,174 @@ ul {
   font-family: "Raleway";
 }
 /* copyright ends */
+
+
+
+
+
+
+
+
+/* mediaqueries */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .form1 {
+    width: 100vw;
+    margin: 0px auto;
+  }
+
+  .select {
+    height: 6.7vw;
+    width: 70vw;
+    font-size: 2.3vw;
+    margin: 1vw auto;
+  }
+
+  .menu {
+    height: 29.7vw;
+    font-size: 2.3vw;
+    width: 70vw;
+    margin: 0vw auto;
+  }
+
+  .apple {
+    margin: 2.22vw 2vw;
+  }
+
+  .btnS {
+    height: 4.7vw;
+    font-size: 2.3vw;
+    width: 16vw;
+  }
+
+  .email {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 1vw auto;
+  }
+
+  .email input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 2.3vw;
+  }
+
+  .message {
+    height: 17vw;
+    width: 70vw;
+    margin: 2vw auto;
+  }
+
+  .message textarea {
+    width: 57vw;
+    height: 14vw;
+    font-size: 2.4vw;
+  }
+
+  .inrow {
+    flex-direction: column;
+  }
+
+  .name {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 0vw auto;
+    margin-bottom: 1vw;
+  }
+
+  .phone {
+    margin-right: 0px;
+    height: 6.7vw;
+    width: 70vw;
+    margin: 1vw auto;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 2.3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .select {
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+    font-size: 3vw;
+  }
+
+  .menu {
+    height: 40.7vw;
+    font-size: 3vw;
+    width: 85%;
+    margin: 0vw auto;
+  }
+
+  .form1 {
+    width: 100vw;
+    margin: 0px auto;
+  }
+
+  .apple {
+    font-size: 3.4vw;
+    margin: 2.22vw 2vw;
+  }
+  .btnS {
+    height: 6.7vw;
+    font-size: 3.5vw;
+    width: 21vw;
+  }
+
+  .email {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+  }
+
+  .email input {
+    width: 57vw;
+    height: 6.5vw;
+    font-size: 3vw;
+  }
+
+  .message {
+    height: 23vw;
+    width: 85%;
+    margin: 2vw auto;
+  }
+
+  .message textarea {
+    width: 61vw;
+    margin: 1vw;
+    height: 17vw;
+    font-size: 3.1vw;
+  }
+
+  .inrow {
+    flex-direction: column;
+  }
+
+  .name {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 0vw auto;
+    margin-bottom: 1vw;
+  }
+
+  .phone {
+    margin-right: 0px;
+    height: 10vw;
+    width: 85%;
+    margin: 1vw auto;
+  }
+
+  .inrow input {
+    width: 57vw;
+    height: 7.7vw;
+    font-size: 3vw;
+  }
+}

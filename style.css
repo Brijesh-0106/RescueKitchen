@@ -4,38 +4,80 @@
 font-family: 'Raleway', sans-serif; */
 
 /* General CSS */
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-.greenraleway {
-  color: rgb(1, 156, 1);
-  font-family: "Raleway", sans-serif;
+.readbutton2 {
+  justify-content: center;
 }
-.yellowraleway {
-  color: #e2b500;
-  font-family: "Raleway", sans-serif;
+.readmore2 {
+  border-radius: 7px;
+  padding: 5px 12px;
+  font-size: 15px;
+  display: flex;
+  right: 5px;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
 }
 
-/* Navbar start*/
 nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 80px;
   width: 100%;
-  height: 12vh;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 55px;
-  padding: 0 25px;
-  justify-content: space-between;
-  margin: auto;
+  position: fixed;
+  z-index: 999;
 }
 
-nav a {
-  text-decoration: none;
+.logo {
+  color: transparent;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
+  margin: auto;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+#check:checked ~ ul {
+  top: 80px;
+}
+
+nav .ul {
+  float: right;
+  margin: 19px 0;
+}
+
+nav .ul .li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 20px;
+}
+
+.checkbtn {
+  float: right;
+  color: rgb(1, 156, 1);
+  line-height: 80px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 .a {
@@ -55,7 +97,7 @@ nav a {
   height: 3px;
   width: 0;
   left: 0;
-  bottom: -2px;
+  bottom: -7px;
   transition: 0.4s ease-in-out;
 }
 
@@ -67,10 +109,15 @@ nav a {
   width: 100%;
 }
 
+nav img {
+  height: 4vw;
+  border-radius: 50%;
+}
+
 .donate {
   border-radius: 7px;
-  padding: 5px 15px;
-  font-size: large;
+  padding: 0px 10px;
+  font-size: 1.4vw;
   cursor: pointer;
   border: 2px solid black;
   background-color: transparent;
@@ -81,6 +128,7 @@ nav a {
   color: black;
   text-decoration: none;
 }
+
 .btnD:hover {
   color: white;
 }
@@ -90,15 +138,6 @@ nav a {
   outline: none;
   color: white;
   background-color: rgb(1, 156, 1);
-}
-
-.logo {
-  color: transparent;
-  font-weight: 900;
-  font-family: cursive;
-  font-size: 30px;
-  -webkit-text-stroke: 1.2px black;
-  margin: auto;
 }
 
 .logo span {
@@ -112,22 +151,25 @@ nav a {
   gap: 2px;
 }
 
-nav img {
-  height: 60px;
-  border-radius: 50%;
+.greenraleway {
+  color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
+}
+.yellowraleway {
+  color: #e2b500;
+  font-family: "Raleway", sans-serif;
 }
 
-.done {
-  display: flex;
-  gap: 40px;
-  align-items: center;
+section {
+  margin-top: 4vw;
 }
-/* Navbar ends */
 
 /* Hero section starts */
 
 .hero {
-  height: 88vh;
+  height: 38vw;
+  position: relative;
+  top: 80px;
 }
 
 video {
@@ -139,7 +181,7 @@ video {
 
 .engage {
   width: 40%;
-  top: 30%;
+  top: 26%;
   position: absolute;
   left: 7%;
   text-align: center;
@@ -149,7 +191,7 @@ video {
 .engage h2 {
   -webkit-text-stroke: 1.25px green;
   color: white;
-  font-size: 41px;
+  font-size: 2.8vw;
   font-weight: 900;
   font-family: "Raleway", sans-serif;
 }
@@ -157,6 +199,7 @@ video {
 .engage h3 {
   color: white;
   margin: 20px 0px;
+  font-size: 1.9vw;
   font-family: "Raleway", sans-serif;
 }
 
@@ -165,7 +208,7 @@ video {
   background-color: transparent;
   border: 2px solid white;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5vw;
   cursor: pointer;
   padding: 15px 35px;
 }
@@ -221,8 +264,9 @@ video {
 /* ourmotivation starts */
 .ourmotivation {
   display: flex;
-  padding: 25px 20px 20px 30px;
+  padding: 25px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .ourworkcontentone h3 {
@@ -233,223 +277,25 @@ video {
 .bgimg1 {
   background-image: url(20240208_132452.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px;
   height: 100%;
 }
+
 .ourmotivationone {
-  font-size: 22px;
-  width: 60%;
+  font-size: 1.5vw;
+  width: 64%;
+  text-align: justify;
 }
 .ourmotivationtwo {
-  width: 40%;
+  width: 30%;
 }
 /* our motivation section ends */
 
-/* news section starts */
-
-/* news section ends */
-
-/* Login section starts */
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://images.unsplash.com/photo-1605210055344-330690f6c99d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjEwfHxmcnVpdHN8ZW58MHx8MHx8fDA%3D");
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 60vw;
-  margin: 20px auto;
-  background-size: contain;
-  background-position: left;
-}
-
-.main {
-  background-color: transparent;
-  color: rgb(1, 156, 1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  border: 2px solid rgb(1, 156, 1);
-  width: 420px;
-  border-radius: 10px;
-  padding: 30px 40px;
-}
-
-.main h2 {
-  text-align: center;
-}
-
-.input {
-  position: relative;
-  width: 100%;
-  margin: 30px 0;
-  height: 50px;
-}
-
-.input input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  border: none;
-  border-radius: 40px;
-  background: transparent;
-  border: 2px solid rgb(1, 156, 1);
-  font-size: 16px;
-  color: rgb(1, 156, 1);
-  padding: 20px 45px 20px 20px;
-}
-
-.input input::placeholder {
-  color: #e2b500;
-}
-
-.input input:focus {
-  border: 2px solid rgb(1, 156, 1);
-}
-
-.input i {
-  color: rgb(1, 156, 1);
-  position: absolute;
-  font-size: 20px;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.checkbox {
-  display: flex;
-  font-size: 14.5px;
-  justify-content: space-between;
-  margin: -15px 0 15px;
-}
-
-.checkbox label input {
-  accent-color: rgb(1, 156, 1);
-  margin-right: 3px;
-}
-
-.checkbox a {
-  color: rgb(1, 156, 1);
-  text-decoration: none;
-}
-
-.checkbox a:hover {
-  text-decoration: underline;
-}
-
-.btnL {
-  width: 100%;
-  height: 45px;
-  outline: none;
-  color: black;
-  border: 2px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  background: transparent;
-  border-radius: 40px;
-}
-.btnL:hover {
-  color: white;
-  border: 2px solid rgb(1, 156, 1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgb(1, 156, 1);
-}
-
-.link {
-  color: rgb(1, 156, 1);
-  margin: 20px 0 15px;
-  text-align: center;
-}
-
-.link a {
-  color: rgb(1, 156, 1);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.link a:hover {
-  text-decoration: underline;
-}
-
-.captcha {
-  margin: 35px 0;
-}
-
-.preview {
-  color: rgb(1, 156, 1);
-  border: 1px dashed rgb(1, 156, 1);
-  text-align: center;
-  height: 40px;
-  width: 100%;
-  letter-spacing: 8px;
-  margin: 10px 0;
-  line-height: 40px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.preview span {
-  display: inline-block;
-  user-select: none;
-}
-
-.captcha-form {
-  display: flex;
-}
-
-.captcha-form input {
-  width: 100%;
-  border: 1px solid #888;
-  padding: 8px;
-  outline: none;
-  border: none;
-  background: transparent;
-  border: 2px solid rgb(1, 156, 1);
-  border-right: none;
-  font-size: 16px;
-  color: rgb(1, 156, 1);
-}
-
-.captcha-form input:focus {
-  border: 2px solid rgb(1, 156, 1);
-  border-right: none;
-}
-
-.captcha-refresh {
-  border: none;
-  outline: none;
-  width: 40px;
-  cursor: pointer;
-  background-color: transparent;
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(1, 156, 1);
-}
-
-.captcha-refresh:hover {
-  border: 2px solid rgb(1, 156, 1);
-  color: rgb(1, 156, 1);
-}
-
-.twenty {
-  font-size: 20px;
-  color: rgb(1, 156, 1);
-}
-
-.captcha-form input::placeholder {
-  color: #e2b500;
-}
-
-.captcha label {
-  color: #e2b500;
-  font-family: "Raleway", sans-serif;
-}
-
-/* Login section ends */
-
 /* donors section starts */
 .donors {
-  padding: 30px 100px;
+  padding: 25px;
 }
 
 .donorsimages {
@@ -457,15 +303,20 @@ video {
 }
 
 .donationinfo {
-  width: 55vw;
+  width: 61vw;
   font-family: "Raleway", sans-serif;
+}
+.donationinfo h1 {
+  font-size: 2.6vw;
 }
 
 .donationinfo h2 {
   color: #e2b500;
+  font-size: 2.4vw;
 }
 .donationinfo h3 {
   color: rgb(1, 156, 1);
+  font-size: 2.3vw;
 }
 
 .donationbutton button {
@@ -485,7 +336,7 @@ video {
 }
 
 .card1 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/img/home/general_mills_logo.png?_cchid=1b8a05dc474acaced150a69a26d41629");
   background-size: contain;
   background-repeat: no-repeat;
@@ -494,7 +345,7 @@ video {
   height: 9rem;
 }
 .card2 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/uploads/posner-horizontal-teal.png?_cchid=7314112977f26a1f3adf556f28cdc098");
   background-size: contain;
   background-repeat: no-repeat;
@@ -503,7 +354,7 @@ video {
   height: 9rem;
 }
 .card3 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/uploads/bjfff.png?_cchid=98c29afe2e4aae8b2b9c3a14ccb4ff79");
   background-size: contain;
   background-repeat: no-repeat;
@@ -512,7 +363,7 @@ video {
   height: 9rem;
 }
 .card4 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/img/home/crown-logo.png?_cchid=2cf64047a3206ca08d832c643901b894");
   background-size: contain;
   background-repeat: no-repeat;
@@ -521,7 +372,7 @@ video {
   height: 9rem;
 }
 .card5 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
   background-size: contain;
   background-repeat: no-repeat;
@@ -530,7 +381,7 @@ video {
   height: 9rem;
 }
 .card6 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/uploads/logos/financial-funders/…_logo.png?_cchid=f50c3e824fceff484cc49b70f7158c0a");
   background-size: contain;
   background-repeat: no-repeat;
@@ -539,7 +390,7 @@ video {
   height: 9rem;
 }
 .card7 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -548,7 +399,7 @@ video {
   height: 9rem;
 }
 .card8 {
-  width: 14rem;
+  width: 15vw;
   background-image: url("https://refed.org/uploads/the-tepper-foundation.png?_cchid=47891c05f9ac04820811284b7a9ac95e");
   background-size: contain;
   background-repeat: no-repeat;
@@ -650,7 +501,6 @@ video {
   border: 1px solid rgb(1, 156, 1);
   color: white;
   background-color: rgb(1, 156, 1);
-
 }
 
 ul {
@@ -662,6 +512,7 @@ ul {
   line-height: 1.5;
   background-color: #f0f0f0;
   padding: 70px 0;
+  margin-top: 4vw;
   font-family: "Raleway";
 }
 
@@ -679,15 +530,303 @@ ul {
 }
 /* footer section ends */
 /* copyright starts */
-.high{
+.high {
   font-size: larger;
   color: black;
 }
-.copyright{
+.copyright {
   text-align: center;
   background-color: white;
   color: black;
-  padding: 10px 0;
-  font-family: 'Raleway';
+  padding: 10px 20px;
+  font-family: "Raleway";
 }
 /* copyright ends */
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+  nav .ul .li a {
+    font-size: 16px;
+  }
+
+  nav .ul .li {
+    margin: 0 8px;
+  }
+
+  .donate {
+    font-size: 1.7vw;
+  }
+
+  .a {
+    font-size: 1.9vw;
+  }
+
+  .ourmotivation {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .ourmotivationtwo {
+    width: 38vw;
+    margin: auto;
+    height: 38vw;
+  }
+
+  .ourmotivationone {
+    font-size: 1.9vw;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .donationinfo {
+    width: 76vw;
+  }
+  .card1 {
+    width: 20vw;
+  }
+  .card2 {
+    width: 20vw;
+  }
+  .card3 {
+    width: 20vw;
+  }
+  .card4 {
+    width: 20vw;
+  }
+  .card5 {
+    width: 20vw;
+  }
+  .card6 {
+    width: 20vw;
+  }
+  .card7 {
+    width: 20vw;
+  }
+  .card8 {
+    width: 20vw;
+  }
+
+  .hero {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+  }
+
+  video {
+    width: 53%;
+    max-width: 53%;
+  }
+
+  .engage {
+    width: 45%;
+    top: 0%;
+    position: static;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .engage h2 {
+    -webkit-text-stroke: black;
+    color: black;
+  }
+
+  .engage h3 {
+    color: black;
+  }
+
+  .engage button {
+    color: white;
+    background-color: rgb(1, 156, 1);
+    border: 2px solid rgb(1, 156, 1);
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 953px) {
+  nav .ul .li {
+    margin: 0 15px;
+  }
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .a {
+    font-size: 1.6vw;
+  }
+
+  .donate {
+    font-size: 1.6vw;
+  }
+
+  .ourmotivationone {
+    font-size: 1.7vw;
+  }
+
+  .card1 {
+    width: 18vw;
+  }
+  .card2 {
+    width: 18vw;
+  }
+  .card3 {
+    width: 18vw;
+  }
+  .card4 {
+    width: 18vw;
+  }
+  .card5 {
+    width: 18vw;
+  }
+  .card6 {
+    width: 18vw;
+  }
+  .card7 {
+    width: 18vw;
+  }
+  .card8 {
+    width: 18vw;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  #para2 {
+    display: none;
+  }
+
+  .readbutton2 {
+    display: flex;
+  }
+
+  .a {
+    font-size: 17px;
+    color: white;
+  }
+
+  .donate {
+    font-size: 17px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px 14px;
+  }
+
+  .donate:hover {
+    color: rgb(1, 156, 1);
+    background-color: white;
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 340px;
+    background: rgb(1, 156, 1);
+    top: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+
+  nav .ul {
+    margin: 0px;
+  }
+
+  nav .ul .li {
+    margin: 20px 0;
+    line-height: 30px;
+    display: block;
+  }
+
+  nav .ul .li a {
+    font-size: 20px;
+    color: white;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: 100vw;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
+    height: 57vw;
+  }
+
+  .engage h2 {
+    font-size: 5vw;
+  }
+
+  .engage h3 {
+    font-size: 3.4vw;
+    margin: 10px 0;
+  }
+
+  .engage button {
+    padding: 7px 15px;
+    font-size: 3vw;
+    margin-top: 0.5rem;
+  }
+
+  .engage {
+    left: 0;
+    margin: 20px auto;
+    width: 71vw;
+  }
+
+  .ourmotivationone {
+    font-size: 15px;
+  }
+
+  .donationinfo h1 {
+    font-size: 20px;
+  }
+  .donationinfo h2 {
+    font-size: 16px;
+  }
+  .donationinfo h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    height: 120vw;
+  }
+
+  .engage {
+    width: 90vw;
+  }
+  .engage h2 {
+    font-size: 6vw;
+  }
+  .engage h3 {
+    font-size: 4vw;
+    margin: 10px 0;
+  }
+
+  .engage button {
+    padding: 10px 15px;
+    font-size: 4vw;
+  }
+
+  .buttons {
+    margin-top: 0.5rem;
+  }
+
+  .ourmotivationtwo {
+    width: 60vw;
+    height: 60vw;
+  }
+}

@@ -4,11 +4,21 @@
 font-family: 'Raleway', sans-serif; */
 
 /* General CSS */
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+section{
+  margin-top: 4vw;
+  position: relative;
+  top: 80px;
 }
 
 .greenraleway {
@@ -20,109 +30,6 @@ font-family: 'Raleway', sans-serif; */
   font-family: "Raleway", sans-serif;
 }
 
-/* Navbar start*/
-nav {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 12vh;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 55px;
-  padding: 0 25px;
-  justify-content: space-between;
-  margin: auto;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-.a {
-  position: relative;
-  text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(1, 156, 1);
-  font-size: 1.4vw;
-  letter-spacing: 0.5px;
-}
-
-.a::after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -2px;
-  transition: 0.4s ease-in-out;
-}
-
-.a:hover {
-  color: black;
-}
-
-.a:hover::after {
-  width: 100%;
-}
-
-.donate {
-  border-radius: 7px;
-  padding: 5px 15px;
-  font-size: large;
-  cursor: pointer;
-  border: 2px solid black;
-  background-color: transparent;
-  color: black;
-}
-
-.btnD {
-  color: black;
-  text-decoration: none;
-}
-.btnD:hover {
-  color: white;
-}
-
-.donate:hover {
-  border: 2px solid rgb(1, 156, 1);
-  outline: none;
-  color: white;
-  background-color: rgb(1, 156, 1);
-}
-
-.logo {
-  color: transparent;
-  font-weight: 900;
-  font-family: cursive;
-  font-size: 30px;
-  -webkit-text-stroke: 1.2px black;
-  margin: auto;
-}
-
-.logo span {
-  color: rgb(1, 156, 1);
-  font-size: larger;
-  font-weight: 900;
-}
-
-.wholelogo {
-  display: flex;
-  gap: 2px;
-}
-
-nav img {
-  height: 60px;
-  border-radius: 50%;
-}
-
-.done {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-/* Navbar ends */
 
 /* Section header starts */
 .sec_header::after {
@@ -151,8 +58,9 @@ nav img {
 
 /* Hero section starts */
 .hero {
-  /* height: 80vh; */
-  padding: 50px 0px;
+  padding: 25px;
+  position: relative;
+  top: 80px;
 }
 
 video {
@@ -201,7 +109,7 @@ video {
 
 /* Donation table and info starts */
 .tableinfo {
-  padding: 60px 20px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -412,6 +320,7 @@ video {
   font-family: "Roboto Slab", serif;
   font-weight: 100;
   display: block;
+  position: relative;
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   height: 2.7vw;
@@ -569,7 +478,7 @@ video {
   background: white;
   color: rgb(1, 156, 1);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   border: none;
   width: 25vw;
@@ -592,7 +501,9 @@ video {
 
 .caret {
   height: 0;
+  position: absolute;
   width: 0;
+  right: 15px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 6px solid rgb(1, 156, 1);
@@ -625,6 +536,8 @@ video {
 .menu li {
   padding: 0.7em 0.5em;
   margin: 0.3em 0;
+  display: flex;
+  align-items: center;
   border-radius: 0.5em;
   cursor: pointer;
 }
@@ -647,6 +560,9 @@ video {
 .pa6ad {
   z-index: -99;
 }
+.opo {
+  opacity: 0;
+}
 /* donation form section ends */
 
 /* Supporters starts */
@@ -664,7 +580,7 @@ video {
 }
 
 .supporters {
-  padding: 60px 70px;
+  padding:25px;
 }
 
 .card1 {
@@ -696,7 +612,7 @@ video {
 }
 .card4 {
   width: 14rem;
-  background-image: url("https://refed.org/img/home/crown-logo.png?_cchid=2cf64047a3206ca08d832c643901b894");
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -714,7 +630,7 @@ video {
 }
 .card6 {
   width: 14rem;
-  background-image: url("https://refed.org/uploads/logos/financial-funders/…_logo.png?_cchid=f50c3e824fceff484cc49b70f7158c0a");
+  background-image: url("https://refed.org/uploads/ballmer-logo.png?_cchid=618b0b9442845c262d0d7cb5ac625197");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -868,6 +784,9 @@ ul {
   line-height: 1.5;
   background-color: #f0f0f0;
   padding: 70px 0;
+  position: relative;
+  top: 80px;
+  margin-top: 4vw;
   font-family: "Raleway";
 }
 
@@ -898,17 +817,12 @@ ul {
   text-align: center;
   background-color: white;
   color: black;
-  padding: 10px 0;
+  position: relative;
+  top: 80px;
+  padding: 10px 20px;
   font-family: "Raleway";
 }
 /* copyright ends */
-
-
-
-
-
-
-
 
 /* mediaqueries */
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
@@ -916,21 +830,21 @@ ul {
     width: 100vw;
     margin: 0px auto;
   }
-
+  
   .select {
     height: 6.7vw;
     width: 70vw;
     font-size: 2.3vw;
     margin: 1vw auto;
   }
-
+  
   .menu {
     height: 29.7vw;
     font-size: 2.3vw;
     width: 70vw;
     margin: 0vw auto;
   }
-
+  
   .apple {
     margin: 2.22vw 2vw;
   }
@@ -1071,5 +985,215 @@ ul {
     width: 57vw;
     height: 7.7vw;
     font-size: 3vw;
+  }
+}
+
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  color: transparent;
+  font-family: cursive;
+  font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
+  margin: auto;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+#check:checked ~ ul {
+  top: 80px;
+}
+
+nav .ul {
+  float: right;
+  margin: 19px 0;
+}
+
+nav .ul .li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 20px;
+}
+
+.checkbtn {
+  float: right;
+  color: rgb(1, 156, 1);
+  line-height: 80px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.a {
+  position: relative;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(1, 156, 1);
+  font-size: 1.4vw;
+  letter-spacing: 0.5px;
+}
+
+.a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  transition: 0.4s ease-in-out;
+}
+
+.a:hover {
+  color: black;
+}
+
+.a:hover::after {
+  width: 100%;
+}
+
+nav img {
+  height: 4vw;
+  border-radius: 50%;
+}
+
+.donate {
+  border-radius: 7px;
+  padding: 0px 10px;
+  font-size: 1.4vw;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.btnD {
+  color: black;
+  text-decoration: none;
+}
+
+.btnD:hover {
+  color: white;
+}
+
+.donate:hover {
+  border: 2px solid rgb(1, 156, 1);
+  outline: none;
+  color: white;
+  background-color: rgb(1, 156, 1);
+}
+
+.logo span {
+  color: rgb(1, 156, 1);
+  font-size: larger;
+  font-weight: 900;
+}
+
+.wholelogo {
+  display: flex;
+  gap: 2px;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+  nav .ul .li a {
+    font-size: 16px;
+  }
+
+  nav .ul .li {
+    margin: 0 8px;
+  }
+
+  .donate {
+    font-size: 1.7vw;
+  }
+
+  .a {
+    font-size: 1.9vw;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 953px) {
+  nav .ul .li {
+    margin: 0 15px;
+  }
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .a {
+    font-size: 1.6vw;
+  }
+
+  .donate {
+    font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .a {
+    font-size: 17px;
+    color: white;
+  }
+
+  .donate {
+    font-size: 17px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px 14px;
+  }
+
+  .donate:hover {
+    color: rgb(1, 156, 1);
+    background-color: white;
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 340px;
+    background: rgb(1, 156, 1);
+    top: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+
+  nav .ul {
+    margin: 0px;
+  }
+
+  nav .ul .li {
+    margin: 20px 0;
+    line-height: 30px;
+    display: block;
+  }
+
+  nav .ul .li a {
+    font-size: 20px;
+    color: white;
   }
 }

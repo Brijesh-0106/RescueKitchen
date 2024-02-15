@@ -17,10 +17,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- AOS(Animation On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- textify -->
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
+    <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
     <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
     <style>
         .tabledonation .col,
         .col-sm-1 {
@@ -30,6 +34,14 @@
             padding: 7px 12px;
             margin: 9px;
         }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
     </style>
 </head>
 
@@ -37,51 +49,50 @@
 
     <!-- Navbar start -->
     <nav>
-        <a href="index.html">
-            <div class="wholelogo">
-                <img src="https://th.bing.com/th/id/OIG2.yqz2TF2o7ZiyK2WAQnJL?pid=ImgGn" alt="RescueKitchen">
-                <h3 class="logo"><span>R</span>escue<span>K</span>itchen</h3>
-            </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="/">
+            <label class="logo"><span>R</span>escue<span>K</span>itchen</label>
         </a>
-        <div class="done">
-            <a href="foodwaste.html" class="a marg">FoodWaste</a>
-            <a href="restro.html" class="a marg">Restaurants</a>
-            <a href="ngo.html" class="a marg">NGO's</a>
-            <a href="contactus.html" class="a marg">Contact-us</a>
-            <a href="aboutus.html" class="a marg">About-Us</a>
-            <a href="Donate.html" class="btnD"><button class="donate marg">Donate</button></a>
-        </div>
+        <ul class="ul">
+            <li class="li"><a href="foodwaste.html" class="a">FoodWaste</a></li>
+            <li class="li"><a href="restro.html" class="a">Restaurants</a></li>
+            <li class="li"><a href="ngo.html" class="a">NGO's</a></li>
+            <li class="li"><a href="contactus.html" class="a">Contact-us</a></li>
+            <li class="li"><a href="aboutus.html" class="a">About-Us</a></li>
+            <li class="li"><a href="Donate.html" class="btnD"><button class="donate">Donate</button></a></li>
+        </ul>
     </nav>
     <!-- Navbar end -->
-    <section>
-        <!-- Hero section starts -->
-        <div class="hero">
-            <div class="rowvideo">
-                <div class="videocontent">
-                    <h1 data-textify data-aos="zoom-in">Support our mission</h1>
-                    <h3>Join the fight against food waste and hunger with <span
-                            class="curs"><span>R</span>escue<span>K</span>itchen</span></h3>
-                    <p>Donation benefits reduction of food waste is the act of giving financial support to
-                        organizations or initiatives that work to prevent or reduce food waste and its negative impacts.
-                    </p>
+    <!-- Hero section starts -->
+    <div class="hero">
+        <div class="rowvideo">
+            <div class="videocontent">
+                <h1 data-textify data-aos="zoom-in">Support our mission</h1>
+                <h3>Join the fight against food waste and hunger with <span
+                        class="curs"><span>R</span>escue<span>K</span>itchen</span></h3>
+                <p>Donation benefits reduction of food waste is the act of giving financial support to
+                    organizations or initiatives that work to prevent or reduce food waste and its negative impacts.
+                </p>
 
-                    <p>It helps fund the research, innovation, and implementation of food waste solutions, such as
-                        improving food storage, transportation, processing, packaging, labeling, marketing, and
-                        distribution.</p>
-                </div>
-                <!-- Video -->
-
-                <video autoplay loop muted
-                    poster="https://d1vdjc70h9nzd9.cloudfront.net/media/campaign/197000/197563/image/5ec10d19bfebe.jpeg">
-                    <source src="food donation1.mp4">
-                    <source src="food donation1.mp4">
-                    <source src="food donation1.mp4">
-                </video>
-
-
+                <p>It helps fund the research, innovation, and implementation of food waste solutions, such as
+                    improving food storage, transportation, processing, packaging, labeling, marketing, and
+                    distribution.</p>
             </div>
+            <!-- Video -->
+
+            <video autoplay loop muted
+                poster="https://d1vdjc70h9nzd9.cloudfront.net/media/campaign/197000/197563/image/5ec10d19bfebe.jpeg">
+                <source src="food donation1.mp4">
+                <source src="food donation1.mp4">
+                <source src="food donation1.mp4">
+            </video>
+
+
         </div>
-    </section>
+    </div>
     <!-- Hero section ends -->
 
 
@@ -178,14 +189,29 @@
                 <div class="inrow">
                     <div class="dropdown">
                         <div class="select">
-                            <span class="selected">Select Currency</span>
+                            <span class="selected" style="color: #e2b500;"><i class="fa-solid fa-coins" style="
+                                margin: 0vw 0.5vw;
+                                font-size: 1.4rem;
+                                margin-right: 30px;
+                                color: rgb(1, 156, 1);"></i>Select Currency</span>
                             <div class="caret"></div>
                         </div>
                         <ul class="menu">
-                            <li>Indian Rupee</li>
-                            <li>United States Dollar</li>
-                            <li>Russian Ruble</li>
-                            <li>Bangladeshi Taka</li>
+                            <li><i class="fa-solid fa-indian-rupee-sign" style="margin: 0vw 0.5vw;
+                                font-size: 1.4rem;margin-right: 40px;"></i>
+                                Indian Rupee
+                                <!-- <div class="caret opo"></div> -->
+                            </li>
+                            <li><i class="fa-solid fa-dollar-sign" style="margin: 0vw 0.5vw;
+                                font-size: 1.4rem; margin-right: 40px;"></i>
+                                United States Dollar
+                                <!-- <div class="caret opo"></div> -->
+                            </li>
+                            <li><i class="fa-solid fa-ruble-sign" style="margin: 0vw 0.5vw;
+                                font-size: 1.4rem;margin-right: 40px;"></i>
+                                Russian Ruble
+                                <!-- <div class="caret opo" id="car"></div> -->
+                            </li>
                         </ul>
                     </div>
                     <div class="phone" id="phon">
@@ -195,13 +221,7 @@
                         <input type="number" id="pho" placeholder="Amount">
                     </div>
                 </div>
-                <div class="message" id="massage">
-                    <label for="mes">
-                        <ion-icon name="chatbox-ellipses-outline" class="apple"></ion-icon>
-                    </label>
-                    <textarea id="mes" cols="30" rows="10" placeholder="Message"></textarea>
-                </div>
-                <br />
+                <br>
                 <!-- SUBMIT BUTTON -->
                 <input type="submit" value="Donate" class="btnS" data-aos="zoom-in">
             </form>
@@ -223,20 +243,20 @@
                     reimagine our food system without loss or waste.</p>
             </div>
             <div class="supporterimage">
-                <div class="container text-center">
-                    <div class="row row-cols-4" style="gap: 60px 0;">
+                <div class="container-fluid text-center">
+                    <div class="row row-cols-4" style="gap: 90px 0;">
                         <div class="col card1"></div>
                         <div class="col card2"></div>
                         <div class="col card3"></div>
                         <div class="col card4"></div>
                         <div class="col card5"></div>
-                        <div class="col card6"></div>
                         <div class="col card7"></div>
                         <div class="col card8"></div>
-                        <div class="col card9"></div>
+                        <div class="col card6"></div>
                         <div class="col card10"></div>
                         <div class="col card11"></div>
                         <div class="col card12"></div>
+                        <div class="col card9"></div>
                     </div>
                 </div>
             </div>
@@ -258,7 +278,7 @@
                 <p> Reimagining a food system without waste or loss requires contributions of all types and sizes.</p>
             </div>
             <div class="names">
-                <div class="container text-center">
+                <div class="container-fluid text-center">
                     <div class="row row-cols-5"
                         style="gap: 30px 0;font-size: 18px;font-family: 'Raleway';color: rgb(1,156,1);">
                         <div class="col">Lakshmi</div>
@@ -341,10 +361,6 @@
     </footer>
     <div class="copyright">
         <small>
-            <span>
-                <span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. 4602 21st Street, #1531,
-                Long Island City, NY 11101-9998</span>
-            <br>
             <span><span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. is a tax-exempt
                 organization
                 under section 501(c)(3) of the Internal Revenue Code. Tax ID: 83-1579781
@@ -355,29 +371,29 @@
     <script>
         // for dropdown
         const dropdowns = document.querySelectorAll('.dropdown')
-        const mm = document.getElementById('massage')
+        const btns = document.querySelector('.btnS')
         const phon = document.getElementById('phon')
+        console.log(btns)
         dropdowns.forEach(dropdown => {
             const select = dropdown.querySelector('.select')
             const menu = dropdown.querySelector('.menu')
             const caret = dropdown.querySelector('.caret')
             const options = dropdown.querySelectorAll('.menu li')
-            console.log(mm)
             const selected = dropdown.querySelector('.selected')
             select.addEventListener("click", () => {
                 select.classList.toggle('select-clicked')
-                mm.classList.toggle('pa6ad')
                 phon.classList.toggle('pa6ad')
+                btns.classList.toggle('pa6ad')
                 caret.classList.toggle('caret-rotate')
                 menu.classList.toggle('menu-open')
             })
-            
+
             options.forEach(option => {
                 option.addEventListener('click', () => {
-                    selected.innerHTML = option.innerHTML
-                    mm.classList.toggle('pa6ad')
                     phon.classList.toggle('pa6ad')
-                    selected.innerText = option.innerText
+                    btns.classList.toggle('pa6ad')
+                    // selected.innerText = option.innerText
+                    select.innerHTML = option.innerHTML
                     select.classList.remove('select-clicked')
                     caret.classList.remove('caret-rotate')
                     menu.classList.remove('menu-open')

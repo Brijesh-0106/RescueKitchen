@@ -13,39 +13,39 @@
     <!-- AOS(Animation On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- textify -->
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
+    <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
     <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
 </head>
 
 <body>
     <!-- Navbar start -->
     <nav>
-        <a href="index.html">
-            <div class="wholelogo">
-                <img src="https://th.bing.com/th/id/OIG2.yqz2TF2o7ZiyK2WAQnJL?pid=ImgGn" alt="RescueKitchen">
-                <h3 class="logo"><span>R</span>escue<span>K</span>itchen</h3>
-            </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="/">
+            <label class="logo"><span>R</span>escue<span>K</span>itchen</label>
         </a>
-        <div class="done">
-            <a href="foodwaste.html" class="a marg">FoodWaste</a>
-            <a href="restro.html" class="a marg">Restaurants</a>
-            <a href="ngo.html" class="a marg">NGO's</a>
-            <a href="contactus.html" class="a marg">Contact-us</a>
-            <a href="aboutus.html" class="a marg">About-Us</a>
-            <a href="Donate.html" class="btnD"><button class="donate marg">Donate</button></a>
-        </div>
+        <ul class="ul">
+            <li class="li"><a href="foodwaste.html" class="a">FoodWaste</a></li>
+            <li class="li"><a href="restro.html" class="a">Restaurants</a></li>
+            <li class="li"><a href="ngo.html" class="a">NGO's</a></li>
+            <li class="li"><a href="contactus.html" class="a">Contact-us</a></li>
+            <li class="li"><a href="aboutus.html" class="a">About-Us</a></li>
+            <li class="li"><a href="Donate.html" class="btnD"><button class="donate">Donate</button></a></li>
+        </ul>
     </nav>
     <!-- Navbar end -->
 
     <!-- What we do? starts -->
-    <section>
-        <div class="logoagain">
-            <div class="wholelogo2">
-                <img src="https://th.bing.com/th/id/OIG2.yqz2TF2o7ZiyK2WAQnJL?pid=ImgGn" alt="RescueKitchen">
-                <h3 class="logo2"><span>R</span>escue<span>K</span>itchen</h3>
-            </div>
+    <div class="logoagain">
+        <div class="wholelogo2">
+            <h3 class="logo2"><span>R</span>escue<span>K</span>itchen</h3>
         </div>
+    </div>
+    <section>
         <div class="whatwedoone">
             <h1 data-aos="zoom-in" data-textify>What we do?</h1>
             <p>
@@ -62,20 +62,26 @@
                 and contribute to social good. We also help NGOs save time, money, and resources, and provide
                 nutritious meals to their beneficiaries.</p>
 
-            <p><span class="yellowraleway">We started RescueKitchen in 2024</span>, after witnessing the huge amount
-                of food that was thrown away
-                every day by restaurants, while millions of people were suffering from hunger and malnutrition. We
-                decided to create a platform that would match restaurants with NGOs, and coordinate the logistics of
-                food collection and delivery. We also developed a secret ingredient, Rescued Bread Flour, that
-                transforms leftover bread into a versatile and delicious flour that can be used for baking and
-                cooking.</p>
 
-            <p>Since then, we have rescued over <span class="yellowraleway">10,000 kg of food, and provided over
-                    50,000 meals to people</span> in
-                need. We have also partnered with over <span class="yellowraleway">100 restaurants and 50 NGOs
-                    across Ahmedabad</span>, and we are
-                expanding to other cities soon. We have received recognition and support from various organizations,
-                such as <span class="yellowraleway">The Times of India, NDTV, and The Better India</span>.</p>
+            <div class="more" id="more">
+                <p><span class="yellowraleway">We started RescueKitchen in 2024</span>, after witnessing the huge amount
+                    of food that was thrown away
+                    every day by restaurants, while millions of people were suffering from hunger and malnutrition. We
+                    decided to create a platform that would match restaurants with NGOs, and coordinate the logistics of
+                    food collection and delivery. We also developed a secret ingredient, Rescued Bread Flour, that
+                    transforms leftover bread into a versatile and delicious flour that can be used for baking and
+                    cooking.</p>
+
+                <p>Since then, we have rescued over <span class="yellowraleway">10,000 kg of food, and provided over
+                        50,000 meals to people</span> in
+                    need. We have also partnered with over <span class="yellowraleway">100 restaurants and 50 NGOs
+                        across Ahmedabad</span>, and we are
+                    expanding to other cities soon. We have received recognition and support from various organizations,
+                    such as <span class="yellowraleway">The Times of India, NDTV, and The Better India</span>.</p>
+            </div>
+            <div class="readbutton">
+                <button class="readmore" id="readmore" onclick="readfunc()">Read more</button>
+            </div>
         </div>
     </section>
     <!-- What we do? ends -->
@@ -90,10 +96,14 @@
                 experience in food business strategy and sustainability, finance, data analytics, culinary arts,
                 research, agricultural development, and communications. Meet the people who make our work possible.
             </p>
-            <p>We are a team of passionate and dedicated individuals who share a common vision of a world where no
+            <p id="para2">We are a team of passionate and dedicated individuals who share a common vision of a world
+                where no
                 food is wasted, and no one goes hungry. We invite you to join us in our journey of rescuing food and
                 feeding hope.
             </p>
+            <div class="readbutton2">
+                <button class="readmore2" id="readmore2" onclick="readfunc2()">Read more</button>
+            </div>
             <!-- </div> -->
         </div>
     </section>
@@ -163,10 +173,6 @@
     <!-- copyright starts -->
     <div class="copyright">
         <small>
-            <span>
-                <span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. 4602 21st Street, #1531,
-                Long Island City, NY 11101-9998</span>
-            <br>
             <span><span class="curs high"><span>R</span>escue<span>K</span>itchen</span>, Inc. is a tax-exempt
                 organization
                 under section 501(c)(3) of the Internal Revenue Code. Tax ID: 83-1579781
@@ -189,6 +195,37 @@
             loop: true,
         }
         const typed = new Typed('.new1', obj);
+
+        function readfunc() {
+            let john = document.getElementById('more');
+            if (john.style.display == 'block') {
+                john.style.display = 'none'
+            } else {
+                john.style.display = 'block'
+            }
+            let text = document.getElementById('readmore');
+            console.log(text.innerText)
+            if (text.innerText == 'Read more') {
+                text.innerText = 'Read less';
+            } else {
+                text.innerText = 'Read more';
+            }
+        }
+        function readfunc2() {
+            let john2 = document.getElementById('para2');
+            if (john2.style.display == 'block') {
+                john2.style.display = 'none'
+            } else {
+                john2.style.display = 'block'
+            }
+            let text2 = document.getElementById('readmore2');
+            console.log(text2.innerText)
+            if (text2.innerText == 'Read more') {
+                text2.innerText = 'Read less';
+            } else {
+                text2.innerText = 'Read more';
+            }
+        }
     </script>
     <!-- Bootstarp link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"

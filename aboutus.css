@@ -26,6 +26,10 @@ section {
   top: 80px;
 }
 
+.readbutton2{
+  display: none;
+}
+
 /* What we do? starts */
 
 .curs {

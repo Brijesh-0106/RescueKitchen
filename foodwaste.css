@@ -649,7 +649,7 @@ ul {
     font-size: 2.6vw;
     width: 83vw;
   }
-  
+
   .donationinfo h1 {
     font-size: 3.3vw;
   }
@@ -665,7 +665,6 @@ ul {
   .ourmotivationone h1 {
     font-size: 3.3vw;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -723,5 +722,38 @@ ul {
 
   .ourmotivation {
     margin-bottom: 17vw;
+  }
+}
+
+/* chart */
+/* Apply some basic styling to the chart container */
+#unique-container {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 800px; /* Set max-width for the container */
+  height: 500px;
+  margin: 0px auto; /* Add margin */
+  padding: 20px; /* Add padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Adjust text size for better visibility on smaller screens */
+@media only screen and (max-width: 350px) {
+  .highcharts-title,
+  .highcharts-subtitle,
+  .highcharts-axis-labels,
+  .highcharts-legend-item text,
+  .highcharts-data-labels text {
+    font-size: 10px !important; /* Adjust font size */
+  }
+  /* .highcharts-title {
+    font-size: 14px !important; 
+} */
+}
+
+@media only screen and (min-width: 1300px) {
+  .card-text {
+    font-size: 18px;
   }
 }

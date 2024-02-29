@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
 *::after,
@@ -7,6 +7,18 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+:root {
+  --headerf: Montserrat;
+  --bodyf: Lato;
+  --trans: transparent;
+  --primaryc: rgb(1, 156, 1);
+  --secondaryc: #e2b500;
+  --accentc: #e67e22;
+  --neutralc: #f0f0f0;
+  --bgc: white;
+  --bb: black;
 }
 
 nav {
@@ -20,7 +32,6 @@ nav {
 
 .logo {
   color: transparent;
-  font-family: cursive;
   font-size: 30px;
   -webkit-text-stroke: 1.2px black;
   margin: auto;
@@ -61,8 +72,6 @@ nav .ul .li {
 .a {
   position: relative;
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgb(1, 156, 1);
   font-size: 1.4vw;
   letter-spacing: 0.5px;
@@ -137,7 +146,6 @@ nav img {
   width: 40%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
-  font-family: "Raleway";
   border: none;
 }
 
@@ -186,11 +194,9 @@ nav img {
 
 .greenraleway {
   color: rgb(1, 156, 1);
-  font-family: "Raleway", sans-serif;
 }
 .yellowraleway {
   color: #e2b500;
-  font-family: "Raleway", sans-serif;
 }
 
 section {
@@ -211,12 +217,10 @@ section {
 
 .ourmotivation h1 {
   color: rgb(1, 156, 1);
-  font-family: "Raleway", sans-serif;
   font-size: 2.7vw;
 }
 
 .ourworkcontentone h3 {
-  font-family: "Raleway", sans-serif;
   color: rgb(1, 156, 1);
 }
 
@@ -231,7 +235,6 @@ section {
 .ourmotivationone {
   font-size: 1.4vw;
   width: 64%;
-  font-family: "Raleway";
   text-align: justify;
 }
 .ourmotivationtwo {
@@ -239,7 +242,6 @@ section {
 }
 
 .curs {
-  font-family: cursive;
   color: black;
 }
 
@@ -261,7 +263,6 @@ section {
 .donationinfo {
   width: 55vw;
   font-size: 1.4vw;
-  font-family: "Raleway", sans-serif;
 }
 
 .donationinfo h1 {
@@ -319,7 +320,6 @@ section {
 .effect h1 {
   color: rgb(1, 156, 1);
   font-size: 2.7vw;
-  font-family: "Raleway", sans-serif;
 }
 
 .effectimg {
@@ -333,7 +333,6 @@ section {
 .effectone {
   font-size: 1.4vw;
   width: 64%;
-  font-family: "Raleway";
 }
 .effecttwo {
   width: 30%;
@@ -423,7 +422,6 @@ ul {
   margin-top: 4vw;
   position: relative;
   top: 5.3362vw;
-  font-family: "Raleway";
 }
 
 /* Responsive */
@@ -456,7 +454,6 @@ ul {
   position: relative;
   top: 5.3362vw;
   padding: 10px 20px;
-  font-family: "Raleway";
 }
 /* copyright ends */
 .swiper-pagination {

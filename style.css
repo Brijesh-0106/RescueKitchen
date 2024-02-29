@@ -1,160 +1,34 @@
 /* Google fonts link */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* .arapey-regular {
-  font-family: "Arapey", serif;
-  font-weight: 400;
-  font-style: normal;
-
-  .arapey-regular {
-  font-family: "Arapey", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.arapey-regular-italic {
-  font-family: "Arapey", serif;
-  font-family: "Arapey", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 200 to 700
-
-.oswald-<uniquifier> {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-} */
-/* font-family: 'Playfair Display', serif;
-font-family: 'Raleway', sans-serif; */
-
-/* General CSS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
 *::after,
 *::before {
+  list-style: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
+:root {
+  --headerf: Montserrat;
+  --bodyf: Lato;
+  --trans: transparent;
+  --primaryc: rgb(1, 156, 1);
+  --secondaryc: #e2b500;
+  --accentc: #e67e22;
+  --neutralc: #f0f0f0;
+  --bgc: white;
+  --bb: black;
+}
+
+/* readmorebutton starts */
 .readbutton2 {
   justify-content: center;
   display: none;
 }
+
 .readmore2 {
   border-radius: 7px;
   padding: 5px 12px;
@@ -163,14 +37,16 @@ font-family: 'Raleway', sans-serif; */
   right: 5px;
   align-items: center;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid var(--bb);
   background-color: transparent;
-  color: black;
+  color: var(--bb);
 }
+/* readmorebutton ends */
 
+/* navbar starts */
 nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  background-color: white;
+  background-color: var(--bgc);
   height: 80px;
   width: 100%;
   position: fixed;
@@ -178,14 +54,13 @@ nav {
 }
 
 .logo {
-  color: transparent;
-  font-family: cursive;
+  color: var(--primaryc);
+  font-family: var(--headerf);
   font-size: 30px;
-  -webkit-text-stroke: 1.2px black;
   margin: auto;
   line-height: 80px;
   padding: 0 50px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #check:checked ~ ul {
@@ -205,7 +80,7 @@ nav .ul .li {
 
 .checkbtn {
   float: right;
-  color: rgb(1, 156, 1);
+  color: var(--bgc);
   line-height: 80px;
   font-size: 30px;
   margin-right: 40px;
@@ -220,9 +95,9 @@ nav .ul .li {
 .a {
   position: relative;
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(1, 156, 1);
+  font-family: var(--headerf);
+  color: var(--primaryc);
+  font-weight: 600;
   font-size: 1.4vw;
   letter-spacing: 0.5px;
 }
@@ -230,7 +105,7 @@ nav .ul .li {
 .a::after {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: var(--secondaryc);
   height: 3px;
   width: 0;
   left: 0;
@@ -239,7 +114,7 @@ nav .ul .li {
 }
 
 .a:hover {
-  color: black;
+  color: var(--secondaryc);
 }
 
 .a:hover::after {
@@ -255,46 +130,42 @@ nav img {
   border-radius: 7px;
   padding: 0px 10px;
   font-size: 1.4vw;
+  font-family: var(--headerf);
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid var(--primaryc);
   background-color: transparent;
-  color: black;
+  color: var(--primaryc);
+  font-weight: 600;
 }
 
 .btnD {
-  color: black;
+  color: var(--bb);
   text-decoration: none;
 }
 
 .btnD:hover {
-  color: white;
+  color: var(--bgc);
 }
 
 .donate:hover {
-  border: 2px solid rgb(1, 156, 1);
+  border: 2px solid var(--primaryc);
   outline: none;
-  color: white;
-  background-color: rgb(1, 156, 1);
+  color: var(--bgc);
+  background-color: var(--primaryc);
 }
 
 .logo span {
-  color: rgb(1, 156, 1);
+  color: var(--secondaryc);
   font-size: larger;
-  font-weight: 900;
+  font-weight: 600;
 }
-
-.wholelogo {
-  display: flex;
-  gap: 2px;
-}
+/* navbar ends */
 
 .greenraleway {
-  color: rgb(1, 156, 1);
-  font-family: "Raleway", sans-serif;
+  color: var(--primaryc);
 }
 .yellowraleway {
-  color: #e2b500;
-  font-family: "Raleway", sans-serif;
+  color: var(--secondaryc);
 }
 
 section {
@@ -326,48 +197,42 @@ video {
 }
 
 .engage h2 {
-  -webkit-text-stroke: 1.25px green;
-  color: white;
+  -webkit-text-stroke: 1.25px var(--primaryc);
+  color: var(--bgc);
   font-size: 2.8vw;
   font-weight: 900;
-  font-family: "Raleway", sans-serif;
 }
 
 .engage h3 {
-  color: white;
+  color: var(--bgc);
   margin: 20px 0px;
   font-size: 1.9vw;
-  font-family: "Raleway", sans-serif;
 }
 
 .engage button {
-  color: white;
+  color: var(--bgc);
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid var(--bgc);
   font-weight: 600;
   font-size: 1.5vw;
   cursor: pointer;
   padding: 15px 35px;
 }
 
-.curs {
-  font-family: cursive;
-}
-
 .curs span {
-  color: rgb(1, 156, 1);
+  color: var(--primaryc);
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  font-family: "Raleway", sans-serif;
+
   gap: 40px;
 }
 
 .buttons button:hover {
-  background-color: #fff;
-  color: rgb(1, 156, 1);
+  background-color: var(--bgc);
+  color: var(--primaryc);
 }
 
 /* Hero section ends */
@@ -391,10 +256,10 @@ video {
   margin-bottom: 4rem;
 }
 .sec_header h1 {
-  color: rgb(1, 156, 1);
+  color: var(--primaryc);
+  font-family: var(--headerf);
   text-align: center;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
 }
 /* Header section ends */
 
@@ -407,8 +272,7 @@ video {
 }
 
 .ourworkcontentone h3 {
-  font-family: "Raleway", sans-serif;
-  color: rgb(1, 156, 1);
+  color: var(--primaryc);
 }
 
 .bgimg1 {
@@ -441,25 +305,24 @@ video {
 
 .donationinfo {
   width: 61vw;
-  font-family: "Raleway", sans-serif;
 }
 .donationinfo h1 {
   font-size: 2.6vw;
 }
 
 .donationinfo h2 {
-  color: #e2b500;
+  color: var(--secondaryc);
   font-size: 2.4vw;
 }
 .donationinfo h3 {
-  color: rgb(1, 156, 1);
+  color: var(--primaryc);
   font-size: 2.3vw;
 }
 
 .donationbutton button {
-  color: black;
+  color: var(--bb);
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid var(--bb);
   font-weight: 600;
   font-size: 25px;
   cursor: pointer;
@@ -467,9 +330,9 @@ video {
 }
 
 .donationbutton button:hover {
-  color: white;
-  background-color: rgb(1, 156, 1);
-  border: 2px solid rgb(1, 156, 1);
+  color: var(--bgc);
+  background-color: var(--primaryc);
+  border: 2px solid var(--primaryc);
 }
 
 .card1 {
@@ -528,7 +391,7 @@ video {
 }
 .card7 {
   width: 15vw;
-  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_onWhite.png");
+  background-image: url("https://refed.org/img/home/Kroger_ZHZW_Foundation_on var(--bgc).png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -553,7 +416,7 @@ video {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--bgc);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -585,8 +448,8 @@ video {
 
 .footer-col h4 {
   font-size: 18px;
-  font-weight: 500;
-  color: rgb(1, 156, 1);
+  font-weight: 600;
+  color: var(--secondaryc);
   text-transform: capitalize;
   margin-bottom: 35px;
   position: relative;
@@ -596,7 +459,7 @@ video {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: rgb(1, 156, 1);
+  background-color: var(--secondaryc);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -609,35 +472,35 @@ video {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: rgb(1, 156, 1);
+  color: var(--bgc);
   font-weight: 400;
   text-decoration: none;
   display: block;
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: black;
+  color: var(--bb);
   padding-left: 8px;
 }
 .footer-col .social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: transparent;
   margin-right: 10px;
   margin: 0 10px 20px 0;
-  border: 1px solid black;
   text-align: center;
   border-radius: 50%;
   transition: all 0.5s ease;
-  color: black;
+  background-color: transparent;
+  border: 1px solid var(--bgc);
+  color: var(--bgc);
   line-height: 40px;
 }
 
 .footer-col .social-links a:hover {
-  border: 1px solid rgb(1, 156, 1);
-  color: white;
-  background-color: rgb(1, 156, 1);
+  border: 1px solid var(--primaryc);
+  color: var(--bgc);
+  background-color: var(--primaryc);
 }
 
 ul {
@@ -647,10 +510,10 @@ ul {
 
 .footer {
   line-height: 1.5;
-  background-color: #f0f0f0;
+  background-color: var(--primaryc);
   padding: 70px 0;
+  font-family: var(--headerf);
   margin-top: 4vw;
-  font-family: "Raleway";
 }
 
 /* Responsive */
@@ -669,14 +532,15 @@ ul {
 /* copyright starts */
 .high {
   font-size: larger;
-  color: black;
+  color: var(--bb);
 }
 .copyright {
   text-align: center;
-  background-color: white;
-  color: black;
   padding: 10px 20px;
-  font-family: "Raleway";
+  background-color: var(--bgc);
+  color: var(--primaryc);
+  font-family: var(--headerf);
+  font-weight: 600;
 }
 /* copyright ends */
 
@@ -771,18 +635,18 @@ ul {
   }
 
   .engage h2 {
-    -webkit-text-stroke: black;
-    color: black;
+    -webkit-text-stroke: var(--bb);
+    color: var(--bb);
   }
 
   .engage h3 {
-    color: black;
+    color: var(--bb);
   }
 
   .engage button {
-    color: white;
-    background-color: rgb(1, 156, 1);
-    border: 2px solid rgb(1, 156, 1);
+    color: var(--bgc);
+    background-color: var(--primaryc);
+    border: 2px solid var(--primaryc);
   }
 }
 
@@ -836,6 +700,7 @@ ul {
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
+    color: var(--bgc);
   }
 
   #para2 {
@@ -848,26 +713,26 @@ ul {
 
   .a {
     font-size: 17px;
-    color: white;
+    color: var(--bgc);
   }
 
   .donate {
     font-size: 17px;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--primaryc);
+    color: var(--primaryc);
     padding: 3px 14px;
   }
 
   .donate:hover {
-    color: rgb(1, 156, 1);
-    background-color: white;
+    color: var(--primaryc);
+    background-color: var(--bgc);
   }
 
   .ul {
     position: fixed;
     width: 100%;
     height: 340px;
-    background: rgb(1, 156, 1);
+    background: var(--primaryc);
     top: -100%;
     transition: all 0.5s;
     text-align: center;
@@ -875,6 +740,8 @@ ul {
 
   nav .ul {
     margin: 0px;
+    background-color: var(--bgc);
+    color: var(--bgc);
   }
 
   nav .ul .li {
@@ -885,7 +752,20 @@ ul {
 
   nav .ul .li a {
     font-size: 20px;
-    color: white;
+    color: var(--primaryc);
+  }
+
+  nav {
+    background-color: var(--primaryc);
+    color: var(--bgc);
+  }
+
+  .logo {
+    color: var(--bgc);
+  }
+
+  .logo span {
+    color: var(--bgc);
   }
 
   .hero {
@@ -935,7 +815,7 @@ ul {
   .donationinfo h3 {
     font-size: 16px;
   }
-  
+
   .card1 {
     width: 25vw;
   }

@@ -43,7 +43,9 @@
     <!-- Navbar end -->
 
     <!-- contact us section starts -->
-    <section id="contactus">
+
+     <!-- contact us section starts -->
+     <section id="contactus">
         <div class="sec" data-aos="zoom-in">
             <div class="sec_header">
                 <h1 data-textify>Contact Us</h1>
@@ -57,12 +59,14 @@
                             <ion-icon name="person-outline" class="apple"></ion-icon>
                         </label>
                         <input type="text" id="nam" placeholder="Name" />
+                        <div class="error-message" id="name-error">Enter your name</div>
                     </div>
                     <div class="phone">
                         <label for="pho">
                             <ion-icon name="call-outline" class="apple"></ion-icon>
                         </label>
-                        <input type="number" id="pho" placeholder="Phone-Number" />
+                        <input type="tel" id="pho" placeholder="Phone-Number" />
+                        <div class="error-message" id="phone-error">Enter a valid 10-digit phone number</div>
                     </div>
                 </div>
                 <div class="email">
@@ -70,19 +74,22 @@
                         <ion-icon name="mail-outline" class="apple"></ion-icon>
                     </label>
                     <input type="email" id="ema" placeholder="Email" />
+                    <div class="error-message" id="email-error">Enter a valid email address</div>
                 </div>
                 <div class="message">
                     <label for="mes">
                         <ion-icon name="chatbox-ellipses-outline" class="apple"></ion-icon>
                     </label>
-                    <textarea id="mes" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea id="mes" placeholder="Message"></textarea>
                 </div>
+                <div class="error-message" id="message-error">Enter your message</div>
                 <br />
                 <!-- SUBMIT BUTTON -->
                 <input type="submit" class="btnS" data-aos="zoom-in" />
             </form>
         </div>
     </section>
+
     <!-- contact us section ends -->
     <footer class="footer">
         <div class="footercontainer">
@@ -136,6 +143,147 @@
         </small>
     </div>
 
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('.form1');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const nameInput = document.getElementById('nam');
+                const phoneInput = document.getElementById('pho');
+                const emailInput = document.getElementById('ema');
+                const messageInput = document.getElementById('mes');
+
+                const nameField = document.querySelector('.name');
+                const phoneField = document.querySelector('.phone');
+                const emailField = document.querySelector('.email');
+                const messageField = document.querySelector('.message');
+
+                const nameError = document.getElementById('name-error');
+                const phoneError = document.getElementById('phone-error');
+                const emailError = document.getElementById('email-error');
+                const messageError = document.getElementById('message-error');
+
+
+                // Function to validate email address using regular expression
+                function validateEmail(email) {
+                    const re = /\S+@\S+\.\S+/;
+                    return re.test(String(email).toLowerCase());
+                }
+
+                // Function to validate phone number
+                function validatePhoneNumber(phoneNumber) {
+                    const re = /^[0-9]{10}$/;
+                    return re.test(phoneNumber);
+                }
+
+                // Hide all error messages initially
+                nameError.style.display = 'none';
+                phoneError.style.display = 'none';
+                emailError.style.display = 'none';
+                messageError.style.display = 'none';
+
+                // Validate name
+                if (nameInput.value.trim() === '') {
+                    nameError.style.display = 'block';
+                    nameField.style.border = "1px solid red";
+                    nameError.textContent = '*Please enter your name.';
+                    nameInput.focus();
+                    return;
+                }
+
+                // Validate phone number
+                if (phoneInput.value.trim() === '') {
+                    phoneError.style.display = 'block';
+                    nameField.style.border = "";
+                    phoneField.style.border = "1px solid red";
+                    phoneError.textContent = '*Please enter your phone number.';
+                    phoneInput.focus();
+                    return;
+                } else {
+                    let numericValue = phoneInput.value.replace(/\D/g, '');
+                    numericValue = numericValue.slice(0, 10);
+                    phoneInput.value = numericValue;
+
+                    if (!validatePhoneNumber(numericValue)) {
+                        phoneError.style.display = 'block';
+                        nameField.style.border = "";
+                    phoneField.style.border = "1px solid red";
+                        phoneError.textContent = '*Please enter a valid phone number.';
+                        phoneInput.focus();
+                        return;
+                    }
+                }
+
+                // Validate email
+                if (emailInput.value.trim() === '') {
+                    emailError.style.display = 'block';
+                    nameField.style.border = "";
+                    phoneField.style.border = "";
+                    emailField.style.border = "1px solid red";
+                    emailError.textContent = '*Please enter your email address.';
+                    emailInput.focus();
+                    return;
+                } else if (!validateEmail(emailInput.value.trim())) {
+                    emailError.style.display = 'block';
+                    emailError.textContent = '*Please enter a valid email address.';
+                    emailInput.focus();
+                    return;
+                }
+
+                // Validate message
+                if (messageInput.value.trim() === '') {
+                    messageError.style.display = 'block';
+                    nameField.style.border = "";
+                    phoneField.style.border = "";
+                    emailField.style.border = "";
+                    messageField.style.border = "1px solid red";
+                    messageError.textContent = '*Please enter your message.';
+                    messageInput.focus();
+                    return;
+                }
+
+                // Create an object to hold the form data
+                const contactUsForm = {
+                    name: nameInput.value,
+                    phone: phoneInput.value,
+                    email: emailInput.value,
+                    message: messageInput.value
+                };
+
+                // Store the form data in local storage as a JSON string
+                localStorage.setItem('contactUsForm', JSON.stringify(contactUsForm));
+
+                nameField.style.border = "";
+                    phoneField.style.border = "";
+                    emailField.style.border = "";
+                    messageField.style.border = "";
+
+                // If all validation passes, submit the form
+                alert('Form submitted successfully.');
+                form.reset();
+            });
+
+            // Restrict phone number input to accept only numeric characters and maximum 10 digits
+            const phoneInput = document.getElementById('pho');
+            phoneInput.addEventListener('input', function (event) {
+                // Remove any non-numeric characters from the input value
+                let numericValue = event.target.value.replace(/\D/g, '');
+
+                // Truncate the input value to maximum 10 digits
+                numericValue = numericValue.slice(0, 10);
+
+                // Update the input field value with only numeric characters and maximum 10 digits
+                event.target.value = numericValue;
+            });
+        });
+
+
+    </script>
+
+
     <!-- Bootstarp link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
@@ -152,6 +300,11 @@
         new Textify({}, gsap);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Chatbot code -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/1fbb9cd4-fe16-4e09-88b8-836fd7e63b34/webchat/config.js" defer></script>
+    <!--End of Chatbot code -->
 </body>
 
 </html>

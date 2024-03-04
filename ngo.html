@@ -216,9 +216,9 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark"
+                            <button type="button" data-bs-dismiss="modal" onclick="cancleBtn()" class="btn btn-outline-dark"
                                 onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)">Close</button>
-                            <button type="button" class="btn btn-outline-dark" onmouseover="hoverEffect(this)"
+                            <button type="button" class="btn btn-outline-dark" id="send-message-btn"  onmouseover="hoverEffect(this)"
                                 onmouseout="normalEffect(this)">Send message</button>
                         </div>
                     </div>
@@ -283,44 +283,12 @@
             </span>
         </small>
     </div>
+    <!-- End of footer -->
 
 
 
 
-
-    <script>
-        function hoverEffect(element) {
-            element.style.color = "white";
-            element.style.backgroundColor = "rgb(1,156,1)";
-            element.style.border = "2px solid rgb(1,156,1)";
-        }
-
-
-        function normalEffect(element) {
-            element.style.color = "black";
-            element.style.backgroundColor = "transparent";
-            element.style.border = "1px solid black";
-        }
-
-        const exampleModal = document.getElementById('exampleModal')
-        if (exampleModal) {
-            exampleModal.addEventListener('show.bs.modal', event => {
-                // Button that triggered the modal
-                const button = event.relatedTarget
-                // Extract info from data-bs-* attributes
-                const recipient = button.getAttribute('data-bs-whatever')
-                // If necessary, you could initiate an Ajax request here
-                // and then do the updating in a callback.
-
-                // Update the modal's content.
-                const modalTitle = exampleModal.querySelector('.modal-title')
-                const modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-                modalTitle.textContent = `New message to ${recipient}`
-                modalBodyInput.value = recipient
-            })
-        }
-    </script>
+    <script src="script.js"></script>
 
     <!-- Bootstarp link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
@@ -335,6 +303,11 @@
         new Textify({}, gsap);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Chatbot code -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/1fbb9cd4-fe16-4e09-88b8-836fd7e63b34/webchat/config.js" defer></script>
+    <!--End of Chatbot code -->
 </body>
 
 </html>

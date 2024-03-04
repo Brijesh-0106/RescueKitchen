@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1.25rem;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+        }
+
+        .logo-container {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .logo {
+            color: transparent;
+            font-family: cursive;
+            font-size: 1.875rem;
+            -webkit-text-stroke: 1.2px black;
+            margin: auto;
+            line-height: 5rem;
+            padding: 0 3.125rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: rgb(1, 156, 1);
+            font-size: larger;
+            font-weight: 900;
+        }
+
+        .wholelogo {
+            display: flex;
+            gap: 2px;
+        }
+
+
+        .invoice {
+            max-width: 50rem;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: .3rem;
+            padding: 1.5rem;
+            background-color: #fff;
+        }
+
+        .invoice h2 {
+            text-align: center;
+        }
+
+        .invoice table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .invoice th,
+        .invoice td {
+            padding: .5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .invoice th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .invoice .total {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .buttons button {
+            margin: 0 .8rem;
+            padding: .8rem 1.5rem;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: .3rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .invoice {
+                padding: .8rem;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons button {
+                margin: .8rem 0;
+            }
+        }
+
+        @media (min-width: 3840px) {
+            body {
+                font-size: 1.5rem;
+            }
+
+            .logo-container{
+                margin-top: 3rem;
+            }
+
+            .logo{
+                font-size: 5rem;
+            }
+
+            .invoice {
+                max-width: 60%;
+                font-size: 4rem;
+                margin-top: 3rem;
+            }
+
+            .buttons button{
+                margin-top: 2rem;
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <a href="/">
+            <label class="logo"><span>R</span>escue<span>K</span>itchen</label>
+        </a>
+    </div>
+    <div class="invoice" id="invoiceContent"></div>
+    <div class="buttons">
+        <button onclick="printInvoice()">Print Invoice</button>
+        <button onclick="backToHome()">Back to Home</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve payment ID from session storage
+            const paymentId = sessionStorage.getItem('paymentId');
+
+            // Retrieve other data from local storage
+            const donationData = JSON.parse(localStorage.getItem('donationForm'));
+
+            // Create invoice HTML structure
+            const invoiceContent = document.getElementById('invoiceContent');
+            const invoiceHTML = `
+        <h2>Thank You for Your Donation!</h2><h2>Your Invoice</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Data</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>${donationData.name}</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>${donationData.phone}</td>
+            </tr>
+            <tr>
+                <td>Currency Type</td>
+                <td>${donationData.currencyType}</td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td>${donationData.amount}</td>
+            </tr>
+            <tr>
+                <td>Date and Time</td>
+                <td>${donationData.DateAndTime}</td>
+            </tr>
+            <tr>
+                <td>Payment ID</td>
+                <td>${paymentId}</td>
+            </tr>
+        </table>
+    `;
+            invoiceContent.innerHTML = invoiceHTML;
+        });
+
+        function printInvoice() {
+            window.print();
+        }
+
+        function backToHome() {
+            window.location.href = "Donate.html";
+        }
+
+    </script>
+</body>
+
+</html>

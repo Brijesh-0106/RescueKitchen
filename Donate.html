@@ -25,6 +25,9 @@
     <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.css">
     <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
     <style>
         .tabledonation .col,
         .col-sm-1 {
@@ -69,7 +72,7 @@
     <!-- Hero section starts -->
     <div class="hero">
         <div class="videocontent">
-            <h1 data-aos="zoom-in">Support our mission</h1>
+            <h1 data-textify data-aos="zoom-in">Support our mission</h1>
             <h3>Join the fight against food waste and hunger with <span
                     class="curs"><span>R</span>escue<span>K</span>itchen</span></h3>
             <p>Donation benefits reduction of food waste is the act of giving financial support to
@@ -101,13 +104,13 @@
                 <div class="container text-center">
                     <div class="row row-cols-4">
                         <div class="col-sm-1" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">#</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>#</div>
                         <div class="col" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Donation amount</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>Donation amount</div>
                         <div class="col" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Food waste</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>Food waste</div>
                         <div class="col" style="color: white;
-            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);">Hunger Relief</div>
+            background-color: rgb(1,156,1); border: 2px solid rgb(1, 156, 1);" data-textify>Hunger Relief</div>
                     </div>
                     <div class="row row-cols-4">
                         <div class="col-sm-1">1</div>
@@ -142,8 +145,8 @@
                 </div>
             </div>
             <div class="info">
-                <h1 data-aos="zoom-in">Our Relief work</h1>
-                <h3>Support Food Waste Solution Providers</h3>
+                <h1 data-aos="zoom-in" data-textify>Our Relief work</h1>
+                <h3 data-textify data-textify>Support Food Waste Solution Providers</h3>
                 <p>The table shows how much money you can donate to reduce food waste and its negative
                     impacts, such as greenhouse gas emissions.</p>
                 <p> It
@@ -162,58 +165,51 @@
     <section>
         <div class="sec" data-aos="zoom-in">
             <div class="sec_header">
-                <h1>Donation form</h1>
+                <h1 data-textify>Donation form</h1>
             </div>
         </div>
         <div class="signin">
-            <form action="" class="form1">
+            <form action="#" class="form1" method="get">
                 <div class="inrow">
                     <div class="name">
                         <label for="nam">
                             <ion-icon name="person-outline" class="apple"></ion-icon>
                         </label>
                         <input type="text" id="nam" placeholder="Name">
+                        <div class="error-message" id="name-error">Enter your name</div>
                     </div>
                     <div class="phone">
                         <label for="pho">
                             <ion-icon name="call-outline" class="apple"></ion-icon>
                         </label>
-                        <input type="number" id="pho" placeholder="Phone-Number">
+                        <input type="tel" id="pho" placeholder="Phone Number">
+                        <div class="error-message" id="phone-error">Enter a valid 10-digit phone number</div>
                     </div>
                 </div>
                 <div class="inrow">
                     <div class="dropdown">
-                        <div class="select">
-                            <span class="selected" style="color: #e2b500;"><i class="fa-solid fa-coins"></i>Select
-                                Currency</span>
-                            <div class="caret"></div>
-                        </div>
-                        <ul class="menu">
-                            <li><i class="fa-solid fa-indian-rupee-sign" style="margin: 0vw 0.5vw;
-                                font-size: 1.4rem;margin-right: 40px;"></i>
-                                Indian Rupee
-                                <!-- <div class="caret opo"></div> -->
-                            </li>
-                            <li><i class="fa-solid fa-dollar-sign" style="margin: 0vw 0.5vw;
-                                font-size: 1.4rem; margin-right: 40px;"></i>
-                                United States Dollar
-                                <!-- <div class="caret opo"></div> -->
-                            </li>
-                            <li><i class="fa-solid fa-ruble-sign" style="margin: 0vw 0.5vw;
-                                font-size: 1.4rem;margin-right: 40px;"></i>
-                                Russian Ruble
-                                <!-- <div class="caret opo" id="car"></div> -->
-                            </li>
-                        </ul>
+                        <label for="currency" class="currency-label">
+                            <ion-icon name="cash-outline" class="apple"></ion-icon>
+                        </label>
+                        <select id="currency" class="select-currency custom-select" placeholder="Select Currency">
+                            <option value="" selected disabled>Select Currency</option>
+                            <option value="INR">Indian Rupee</option>
+                            <option value="USD">United States Dollar</option>
+                            <option value="EUR">Euro</option>
+                        </select>
+                        <div class="error-message" id="selection-error">Select your currency type</div>
                     </div>
-                    <div class="phone" id="phon">
-                        <label for="pho">
+                    <div class="phone amount" id="phon">
+                        <label for="amt">
                             <ion-icon name="wallet-outline" class="apple"></ion-icon>
                         </label>
-                        <input type="number" id="pho" placeholder="Amount">
+                        <input type="number" id="amt" placeholder="Amount">
+                        <div class="error-message" id="amount-error">Enter your Amount to donate.</div>
                     </div>
                 </div>
                 <br>
+                <div id="currencyError" class="error-message"></div>
+                <div id="amountError" class="error-message"></div>
                 <!-- SUBMIT BUTTON -->
                 <input type="submit" value="Donate" class="btnS" data-aos="zoom-in">
             </form>
@@ -228,7 +224,7 @@
     <section>
         <div class="supporters">
             <div class="supporterinfo">
-                <h1 data-aos="zoom-in">Thank You to Our Supporters</h1>
+                <h1 data-textify data-aos="zoom-in">Thank You to Our Supporters</h1>
                 <p><span class="curs"><span>R</span>escue<span>K</span>itchen</span>’s ambitious work is made possible
                     by
                     the generous support of our growing donor community. Alongside our legacy funders, they enable us to
@@ -264,7 +260,7 @@
     <section>
         <div class="supporters">
             <div class="supporterinfo">
-                <h1 data-aos="zoom-in">Our indivisual donors</h1>
+                <h1 data-textify data-aos="zoom-in">Our indivisual donors</h1>
                 <p>We are extremely grateful for the partnership and support of our growing community of donors.
                 </p>
                 <p> Reimagining a food system without waste or loss requires contributions of all types and sizes.</p>
@@ -310,7 +306,7 @@
         <div class="footercontainer">
             <div class="footerrow">
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h4 data-textify>Services</h4>
                     <ul style="padding-left: 0rem;">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
@@ -357,6 +353,165 @@
         </small>
     </div>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('.form1');
+            const nameInput = document.getElementById('nam');
+            const phoneInput = document.getElementById('pho');
+            const currencySelect = document.getElementById('currency');
+            const amountInput = document.getElementById('amt');
+
+            const nameField = document.querySelector('.name');
+            const phoneField = document.querySelector('.phone');
+            const dropdownField = document.querySelector('.dropdown');
+            const amountField = document.querySelector('.amount');
+
+            const nameError = document.getElementById('name-error');
+            const phoneError = document.getElementById('phone-error');
+            const selectionError = document.getElementById('selection-error');
+            const amountError = document.getElementById('amount-error');
+
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                let nameValue = nameInput.value.trim();
+                let phoneValue = phoneInput.value.trim();
+                let currencyValue = currencySelect.value;
+                let amountValue = amountInput.value.trim();
+
+                // Hide all error messages initially
+                nameError.style.display = 'none';
+                phoneError.style.display = 'none';
+                selectionError.style.display = 'none';
+                amountError.style.display = 'none';
+
+                // Validate name
+                if (nameValue === '') {
+                    nameError.style.display = 'block';
+                    nameField.style.border = "1px solid red";
+                    nameError.textContent = '*Please enter your name.';
+                    nameInput.focus();
+                    return;
+                }
+
+                // Validate phone number
+                if (phoneValue === '' || phoneValue.length !== 10) {
+                    phoneError.style.display = 'block';
+                    nameField.style.border = "";
+                    phoneField.style.border = "1px solid red";
+                    phoneError.textContent = '*Please enter valid phone number.';
+                    phoneInput.focus();
+                    return;
+                }
+
+                // Validate currency selection
+                if (!currencyValue) {
+                    selectionError.style.display = 'block';
+                    nameField.style.border = "";
+                    phoneField.style.border = "";
+                    dropdownField.style.border = "1px solid red";
+                    selectionError.textContent = '*Please select currency type.';
+                    return;
+                } else {
+                    currencyError.style.display = 'none';
+                }
+
+                // Validate amount
+                if (amountValue === '' || parseFloat(amountValue) <= 0 || isNaN(amountValue)) {
+                    amountError.style.display = 'block';
+                    nameField.style.border = "";
+                    phoneField.style.border = "";
+                    dropdownField.style.border = "";
+                    amountField.style.border = "1px solid red";
+                    amountError.textContent = '*Please Enter your amount.';
+                    amountInput.focus();
+                    return;
+                } else {
+                    amountError.style.display = 'none';
+                }
+
+                nameField.style.border = "";
+                phoneField.style.border = "";
+                dropdownField.style.border = "";
+                amountField.style.border = "";
+
+
+
+                // If all validations pass, you can proceed with form submission or other actions
+                // alert('Form submitted successfully!');
+
+                // Reset form after successful submission
+
+
+                //Razorpay payment gateway code.
+
+                let paymentAmount = amountInput.value * 100;
+
+                let currType = currencySelect.value;
+
+                const currentDate = new Date();
+
+                // Get individual components of the date and time
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth() + 1; // Months are zero-based, so add 1
+                const day = currentDate.getDate();
+                const hours = currentDate.getHours();
+                const minutes = currentDate.getMinutes();
+                const seconds = currentDate.getSeconds();
+
+                // Format the date and time as a string
+                const formattedDateTime = `${year}-${month < 10 ? '0' + month : month}-${day < 10 ? '0' + day : day} ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+
+
+                // console.log(paymentAmount);
+
+                // Storing data into local storage
+                const donationForm = {
+                    name: nameInput.value,
+                    phone: phoneInput.value,
+                    currencyType: currencySelect.value,
+                    amount: amountInput.value,
+                    DateAndTime: formattedDateTime
+                }
+
+                localStorage.setItem('donationForm', JSON.stringify(donationForm));
+                //End of Storing data into local storage
+
+                var options = {
+                    key: 'rzp_test_8ydfJQKGSKoloz',
+                    amount: paymentAmount,
+                    currency: currType,
+                    name: 'Rescue Kitchen',
+                    description: 'Test Transaction',
+                    image: 'images.png',
+                    handler: function (response) {
+                        alert('Thank you for your Donation! Payment successful ID: ' + response.razorpay_payment_id);
+                        sessionStorage.setItem('paymentId', response.razorpay_payment_id);
+                        window.location.href = "payment-success.html";
+                    },
+                    prefill: {
+                        name: 'Test User',
+                        email: 'test@example.com'
+                    },
+                    theme: {
+                        color: '#019C01'
+                    },
+                    payment_capture: 'manual'
+                };
+
+                var rzp = new Razorpay(options);
+                rzp.open();
+                //End of Razorpay payment gateway code.
+
+                form.reset();
+
+            });
+
+        });
+    </script>
+
     <script>
         // for dropdown
         const dropdowns = document.querySelectorAll('.dropdown')
@@ -393,6 +548,8 @@
                 })
             })
         })
+        // textify
+        new Textify({}, gsap);
     </script>
 
     <!-- Bootstarp link -->
@@ -408,6 +565,11 @@
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Chatbot code -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/1fbb9cd4-fe16-4e09-88b8-836fd7e63b34/webchat/config.js" defer></script>
+    <!--End of Chatbot code -->
 </body>
 
 </html>

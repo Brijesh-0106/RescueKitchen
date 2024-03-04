@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+
 *,
 *::after,
 *::before {
@@ -9,22 +10,13 @@
   text-decoration: none;
 }
 
-:root {
-  --headerf: Montserrat;
-  --bodyf: Lato;
-  --trans: transparent;
-  --primaryc: rgb(1, 156, 1);
-  --secondaryc: #e2b500;
-  --accentc: #e67e22;
-  --neutralc: #f0f0f0;
-  --bgc: white;
-  --bb: black;
-}
 .greenraleway {
   color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
 }
 .yellowraleway {
   color: #e2b500;
+  font-family: "Raleway", sans-serif;
 }
 
 /* contact us section starts */
@@ -36,6 +28,45 @@
   background-color: #fff;
   width: 70vw;
   margin: 20px auto;
+}
+.error-message#name-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  right: -12rem;
+}
+
+.error-message#phone-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 9rem;
+}
+
+.error-message#email-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 36rem;
+}
+
+.error-message#message-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -1rem;
+  left: 43.5rem;
 }
 
 .inrow {
@@ -49,6 +80,7 @@
   width: 19vw;
   height: 3.5vw;
   color: rgb(1, 156, 1);
+  font-family: "Merriweather", serif;
   font-weight: 100;
   font-size: 1.3vw;
   border: none;
@@ -56,6 +88,7 @@
 
 .inrow input:focus {
   outline: none;
+  /* IMPORTANT */
 }
 
 .name {
@@ -95,6 +128,7 @@
   position: absolute;
   color: rgb(1, 156, 1);
   width: 47vw;
+  font-family: "Merriweather", serif;
   font-weight: 100;
   height: 3.5vw;
   font-size: 1.3vw;
@@ -109,6 +143,7 @@
   position: absolute;
   width: 47vw;
   margin: 2vh 0vh;
+  font-family: "Merriweather", serif;
   height: 10.5vw;
   font-size: 1.4vw;
   border: none;
@@ -120,6 +155,7 @@
 }
 
 .message {
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -137,6 +173,7 @@ section {
 
 .form1 ::placeholder {
   font-weight: 400;
+  font-family: system-ui;
   color: #e2b500;
 }
 
@@ -146,6 +183,7 @@ section {
 }
 
 .btnS {
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   display: block;
   border: none;
@@ -207,6 +245,7 @@ section {
   color: rgb(1, 156, 1);
   text-align: center;
   font-size: 30px;
+  font-family: "Playfair Display", serif;
 }
 /* Header section ends */
 
@@ -229,8 +268,8 @@ section {
 
 .footer-col h4 {
   font-size: 18px;
-  font-weight: 600;
-  color: var(--secondaryc);
+  font-weight: 500;
+  color: rgb(1, 156, 1);
   text-transform: capitalize;
   margin-bottom: 35px;
   position: relative;
@@ -240,7 +279,7 @@ section {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: var(--secondaryc);
+  background-color: rgb(1, 156, 1);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -253,14 +292,14 @@ section {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: var(--bgc);
+  color: rgb(1, 156, 1);
   font-weight: 400;
   text-decoration: none;
   display: block;
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: var(--bb);
+  color: black;
   padding-left: 8px;
 }
 .footer-col .social-links a {
@@ -273,16 +312,15 @@ section {
   text-align: center;
   border-radius: 50%;
   transition: all 0.5s ease;
-  background-color: transparent;
-  border: 1px solid var(--bgc);
-  color: var(--bgc);
+  color: black;
+  border: 1px solid black;
   line-height: 40px;
 }
 
 .footer-col .social-links a:hover {
-  border: 1px solid var(--primaryc);
-  color: var(--bgc);
-  background-color: var(--primaryc);
+  color: white;
+  border: 1px solid rgb(1, 156, 1);
+  background-color: rgb(1, 156, 1);
 }
 
 ul {
@@ -291,12 +329,12 @@ ul {
 
 .footer {
   line-height: 1.5;
+  background-color: #f0f0f0;
   padding: 70px 0;
   margin-top: 4vw;
-  background-color: var(--primaryc);
-  font-family: var(--headerf);
   position: relative;
   top: 80px;
+  font-family: "Raleway";
 }
 
 /* Responsive */
@@ -324,13 +362,16 @@ ul {
 
 .copyright {
   text-align: center;
-  background-color: var(--bgc);
-  color: var(--primaryc);
-  font-family: var(--headerf);
-  font-weight: 600;
+  background-color: white;
+  color: black;
   padding: 10px 20px;
   position: relative;
   top: 80px;
+  font-family: "Raleway";
+}
+
+.curs {
+  font-family: cursive;
 }
 
 .curs span {
@@ -477,10 +518,9 @@ ul {
   }
 }
 
-/* navbar starts */
 nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  background-color: var(--bgc);
+  background-color: white;
   height: 80px;
   width: 100%;
   position: fixed;
@@ -489,10 +529,11 @@ nav {
 }
 
 .logo {
+  color: transparent;
+  font-family: cursive;
   font-size: 30px;
+  -webkit-text-stroke: 1.2px black;
   margin: auto;
-  color: var(--primaryc);
-  font-family: var(--headerf);
   line-height: 80px;
   padding: 0 50px;
   font-weight: bold;
@@ -515,7 +556,7 @@ nav .ul .li {
 
 .checkbtn {
   float: right;
-  color: var(--bgc);
+  color: rgb(1, 156, 1);
   line-height: 80px;
   font-size: 30px;
   margin-right: 40px;
@@ -530,9 +571,9 @@ nav .ul .li {
 .a {
   position: relative;
   text-decoration: none;
-  font-family: var(--headerf);
-  color: var(--primaryc);
-  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(1, 156, 1);
   font-size: 1.4vw;
   letter-spacing: 0.5px;
 }
@@ -540,7 +581,7 @@ nav .ul .li {
 .a::after {
   content: "";
   position: absolute;
-  background-color: var(--secondaryc);
+  background-color: black;
   height: 3px;
   width: 0;
   left: 0;
@@ -549,7 +590,7 @@ nav .ul .li {
 }
 
 .a:hover {
-  color: var(--secondaryc);
+  color: black;
 }
 
 .a:hover::after {
@@ -566,36 +607,37 @@ nav img {
   padding: 0px 10px;
   font-size: 1.4vw;
   cursor: pointer;
-  font-family: var(--headerf);
-  cursor: pointer;
-  border: 2px solid var(--primaryc);
+  border: 2px solid black;
   background-color: transparent;
-  color: var(--primaryc);
+  color: black;
 }
 
 .btnD {
-  color: var(--bb);
+  color: black;
   text-decoration: none;
 }
 
 .btnD:hover {
-  color: var(--bgc);
+  color: white;
 }
 
 .donate:hover {
-  border: 2px solid var(--primaryc);
+  border: 2px solid rgb(1, 156, 1);
   outline: none;
-  color: var(--bgc);
-  background-color: var(--primaryc);
+  color: white;
+  background-color: rgb(1, 156, 1);
 }
 
 .logo span {
-  color: var(--secondaryc);
+  color: rgb(1, 156, 1);
   font-size: larger;
   font-weight: 900;
 }
 
-/* navbar ends */
+.wholelogo {
+  display: flex;
+  gap: 2px;
+}
 
 @media (max-width: 952px) {
   label.logo {

@@ -1,5 +1,9 @@
 /* Google fonts link */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@600;800&display=swap");
+/* font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* General CSS */
 
 *,
 *::after,
@@ -11,17 +15,6 @@
   text-decoration: none;
 }
 
-:root {
-  --headerf: Montserrat;
-  --bodyf: Lato;
-  --trans: transparent;
-  --primaryc: rgb(1, 156, 1);
-  --secondaryc: #e2b500;
-  --accentc: #e67e22;
-  --neutralc: #f0f0f0;
-  --bgc: white;
-  --bb: black;
-}
 section {
   margin-top: 4vw;
   position: relative;
@@ -30,9 +23,11 @@ section {
 
 .greenraleway {
   color: rgb(1, 156, 1);
+  font-family: "Raleway", sans-serif;
 }
 .yellowraleway {
   color: #e2b500;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Section header starts */
@@ -55,6 +50,7 @@ section {
   color: rgb(1, 156, 1);
   text-align: center;
   font-size: 30px;
+  font-family: "Playfair Display", serif;
 }
 
 /* Section header ends */
@@ -77,15 +73,18 @@ video {
 }
 
 .videocontent {
+  font-family: "Raleway";
   width: 52%;
   text-align: justify;
 }
 
 .videocontent h1 {
+  font-family: "Raleway";
   color: rgb(1, 156, 1);
 }
 
 .videocontent h3 {
+  font-family: "Raleway";
   color: #e2b500;
 }
 
@@ -94,6 +93,7 @@ video {
 }
 
 .curs {
+  font-family: cursive;
   color: black;
   font-size: 28px;
 }
@@ -112,22 +112,27 @@ video {
 
 .tabledonation {
   width: 70%;
+  font-family: "Raleway";
 }
 
 .info {
   width: 44%;
+  font-family: "Raleway";
 }
 
 .info h3 {
+  font-family: "Raleway";
   color: #e2b500;
 }
 
 .info h1 {
   color: rgb(1, 156, 1);
+  font-family: "Raleway";
 }
 
 .info p {
   font-size: 21px;
+  font-family: "Raleway";
 }
 
 /* Donation table and info ends */
@@ -149,7 +154,48 @@ video {
   margin: 20px auto;
 }
 
+.error-message#name-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  right: -12rem;
+}
+
+.error-message#phone-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 9rem;
+}
+
+.error-message#selection-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 11rem;
+}
+
+.error-message#amount-error{
+  display: none;
+  position: relative;
+  color: red;
+  font-size: .8rem;
+  z-index: 10;
+  top: -.5rem;
+  left: 11.5rem;
+}
+
 .con h1 {
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   color: deeppink;
   font-size: 3.2vw;
@@ -162,19 +208,40 @@ video {
   justify-content: space-evenly;
   flex-direction: row;
   margin-bottom: 25px;
+  height: 3.7vw;
 }
 
 .inrow input {
   position: absolute;
   width: 19vw;
-  height: 3.7vw;
+  height: 3.5vw;
   color: rgb(1, 156, 1);
+  font-family: "Merriweather", serif;
   font-weight: 100;
   font-size: 1.3vw;
   border: none;
 }
 
+.inrow select {
+  position: absolute;
+    width: 18vw;
+    height: 3.5vw;
+    color: #e2b500;
+    font-size: 1.3vw;
+    padding: 0;
+    border: none;
+    
+    option{
+      color: rgb(1, 156, 1);
+    }
+}
+
 .inrow input:focus {
+  outline: none;
+  /* IMPORTANT */
+}
+
+.inrow select:focus {
   outline: none;
   /* IMPORTANT */
 }
@@ -220,6 +287,7 @@ video {
   position: absolute;
   color: rgb(1, 156, 1);
   width: 47vw;
+  font-family: "Merriweather", serif;
   font-weight: 100;
   height: 3.7vw;
   font-size: 1.3vw;
@@ -234,6 +302,7 @@ video {
   position: absolute;
   width: 47vw;
   margin: 2vh 0vh;
+  font-family: "Merriweather", serif;
   height: 10.5vw;
   font-size: 1.4vw;
   border: none;
@@ -245,6 +314,7 @@ video {
 }
 
 .message {
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -262,6 +332,7 @@ video {
 }
 
 .conr h1 {
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   font-size: 2.5vw;
   color: black;
@@ -269,11 +340,13 @@ video {
 }
 
 .info {
+  font-family: "Raleway ";
   font-weight: 100;
   padding: 0px 25px;
 }
 
 .open {
+  font-family: "Raleway";
   font-weight: 100;
   padding: 0px 30px;
 }
@@ -290,6 +363,7 @@ video {
 
 .form1 ::placeholder {
   font-weight: 400;
+  font-family: system-ui;
   color: #e2b500;
 }
 
@@ -299,6 +373,7 @@ video {
 }
 
 .btnS {
+  font-family: "Roboto Slab", serif;
   font-weight: 100;
   display: block;
   position: relative;
@@ -318,6 +393,7 @@ video {
 }
 
 .our input {
+  font-family: "Merriweather", serif;
   font-weight: 100;
   position: absolute;
   width: 19vw;
@@ -374,6 +450,7 @@ video {
 
 .app ::placeholder {
   font-weight: 400;
+  font-family: system-ui;
   color: deeppink;
 }
 
@@ -402,6 +479,7 @@ video {
 
 .elasticman input {
   position: absolute;
+  font-family: "Merriweather", serif;
   font-weight: 100;
   width: 47vw;
   height: 3.7vw;
@@ -417,6 +495,7 @@ video {
   position: absolute;
   width: 47vw;
   margin: 1.5vh 0vh;
+  font-family: "Merriweather", serif;
   height: 10.5vw;
   font-size: 1.4vw;
   border: none;
@@ -427,6 +506,7 @@ video {
 }
 
 .spiderman {
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   border: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -444,6 +524,8 @@ video {
 .dropdown {
   min-width: 25vw;
   position: relative;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
 }
 
 .dropdown * {
@@ -550,6 +632,7 @@ video {
 /* Supporters starts */
 .supporterinfo {
   width: 55vw;
+  font-family: "Raleway", sans-serif;
 }
 
 .supporterinfo p {
@@ -768,6 +851,7 @@ ul {
   position: relative;
   top: 80px;
   margin-top: 4vw;
+  font-family: "Raleway";
 }
 
 /* Responsive */
@@ -800,6 +884,7 @@ ul {
   position: relative;
   top: 80px;
   padding: 10px 20px;
+  font-family: "Raleway";
 }
 /* copyright ends */
 
@@ -1004,6 +1089,7 @@ nav {
 
 .logo {
   color: transparent;
+  font-family: cursive;
   font-size: 30px;
   -webkit-text-stroke: 1.2px black;
   margin: auto;
@@ -1044,6 +1130,8 @@ nav .ul .li {
 .a {
   position: relative;
   text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgb(1, 156, 1);
   font-size: 1.4vw;
   letter-spacing: 0.5px;
@@ -1267,4 +1355,53 @@ nav img {
   .menu {
     margin: 3vw auto;
   }
+}
+
+
+
+
+/* Custom styles for the select currency dropdown */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  padding: 0.375rem 2rem 0.375rem 0.75rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* Hide default arrow icon in select dropdown */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+
+/* Style for the currency label */
+.currency-label {
+  color: #e2b500;
+}
+
+/* Hide the default arrow icon */
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }

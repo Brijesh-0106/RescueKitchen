@@ -44,7 +44,7 @@ export default function FoodWastePage() {
             Rescue perfectly edible surplus food from top restaurants, or dive into our resources to understand how we can collectively eradicate food waste.
           </p>
           
-          <div style={{ display: "flex", justifyContent: "center", gap: "1rem", background: "rgba(255,255,255,0.03)", padding: "8px", borderRadius: "16px", display: "inline-flex", border: "1px solid var(--border)" }}>
+          <div style={{ justifyContent: "center", gap: "1rem", background: "rgba(255,255,255,0.03)", padding: "8px", borderRadius: "16px", display: "inline-flex", border: "1px solid var(--border)" }}>
             <button 
               onClick={() => setActiveTab("marketplace")}
               style={{ padding: "12px 24px", borderRadius: "12px", border: "none", fontSize: "0.95rem", fontWeight: 600, cursor: "pointer", transition: "var(--transition)", background: activeTab === "marketplace" ? "linear-gradient(135deg, var(--primary), var(--primary-dark))" : "transparent", color: activeTab === "marketplace" ? "white" : "var(--text-muted)", boxShadow: activeTab === "marketplace" ? "0 4px 16px rgba(16,185,129,0.3)" : "none" }}

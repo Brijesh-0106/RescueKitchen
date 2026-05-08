@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#020617"/>
+  <g transform="rotate(35 256 256)">
+    <!-- Abstract glowing plate base -->
+    <circle cx="256" cy="260" r="160" fill="none" stroke="#10b981" stroke-width="16" opacity="0.15"/>
+    <circle cx="256" cy="260" r="130" fill="none" stroke="#10b981" stroke-width="4" opacity="0.3"/>
+    
+    <!-- Dynamic two-tone emerald leaf -->
+    <path d="M 256 400 Q 110 270 256 120 Z" fill="#34d399"/>
+    <path d="M 256 400 Q 400 270 256 120 Z" fill="#059669"/>
+    
+    <!-- Minimalist dark stem -->
+    <line x1="256" y1="400" x2="256" y2="150" stroke="#020617" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

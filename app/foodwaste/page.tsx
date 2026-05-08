@@ -148,7 +148,7 @@ export default function FoodWastePage() {
                   const maxTotal = 150; // Reference max for scaling
                   const scale = 250 / maxTotal;
                   return (
-                    <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1, group: "true", position: "relative" }}>
+                    <div key={i} className="group" style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1, position: "relative" }}>
                       <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "var(--text-main)", marginBottom: "8px" }}>{data.total}kg</div>
                       
                       <div style={{ width: "100%", maxWidth: "60px", display: "flex", flexDirection: "column", borderRadius: "8px 8px 0 0", overflow: "hidden", border: "1px solid var(--border)", borderBottom: "none", transition: "transform 0.3s", cursor: "pointer" }} onMouseEnter={e => e.currentTarget.style.transform = "translateY(-5px)"} onMouseLeave={e => e.currentTarget.style.transform = "translateY(0)"}>

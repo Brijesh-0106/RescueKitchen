@@ -147,7 +147,6 @@ export default function DonatePage() {
             <div className="glass-card" style={{ padding: "2rem" }}>
               <h3
                 style={{
-                  fontSize: "1.1rem",
                   fontFamily: "'Inter', sans-serif",
                   marginBottom: "1.5rem",
                   display: "flex",
